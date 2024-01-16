@@ -9,21 +9,24 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
-  <body  data-aos="zoom-in-up"
-  data-aos-duration="1600">
+  <body>
     <!-- 컨텐츠 영역  -->
     <style>
       .gnb__menu:hover .gnb__submenu {
         display: block !important;
       }
       .gnb__menu:hover > a > span {
-        color: #cd2aaab5;
+        color: #911789f4;
       }
       html {
         scroll-behavior: smooth;
         width: 100% !important;
-        background-color: #f131c738;
+        background-color: #56076779;
+        font-family: "Noto Sans KR", sans-serif;
       }
       .gnb-active {
         color: #911789f4;
@@ -61,7 +64,7 @@
     </style>
 
     <!-- header -->
-    <header class="xf-scroll-change__bg jm-fixed jm-top-0 jm-left-0 jm-right-0 jm-z-[100] jm-h-[60px] xl:jm-h-[80px] jm-transition-all jm-duration-500 jm-w-[100vw]">
+    <header data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="1800" class="xf-scroll-change__bg jm-fixed jm-top-0 jm-left-0 jm-right-0 jm-z-[100] jm-h-[60px] xl:jm-h-[80px] jm-transition-all jm-duration-500 jm-w-[100vw]" style="transition: 0.4s">
       <div class="jm-container jm-mx-auto jm-h-full jm-w-full jm-max-w-[1140px] jm-flex jm-items-center jm-justify-between !jm-border-b-[0px]">
         <!-- mobile gnb toggle -->
         <div class="jm-flex xl:jm-hidden">
@@ -104,10 +107,10 @@
         </div>
 
         <!-- menu -->
-        <ul class="xf-scroll-change__text jm-hidden xl:!jm-flex jm-h-full jm-items-center xl:jm-gap-x-[50px] jm-gap-x-[14px] jm-mx-auto jm-text-[#FFF] jm-text-[18px] jm-font-bold jm-tracking-[-0.0174em] jm-leading-[26.06px] jm-pr-[50px]">
-          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+        <ul class="xf-scroll-change__text jm-hidden xl:!jm-flex jm-h-full jm-items-center xl:jm-gap-x-[90px] jm-gap-x-[25px] jm-mx-auto jm-text-[#FFF] jm-text-[18px] jm-font-bold jm-tracking-[-0.0174em] jm-leading-[26.06px] jm-pr-[50px]">
+          <!-- <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
             <a href="#" class="jm-relative jm-flex jm-justify-center jm-items-center">
-              <span class="jm-text-[18px] jm-font-[500] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff]">메뉴</span>
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">1뎁스</span>
             </a>
 
             <ul class="gnb__submenu jm-absolute jm-left-[50%] jm-translate-x-[-50%] jm-hidden jm-top-[100%] jm-py-[10px] jm-bg-[#FFF]" style="box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15)">
@@ -117,6 +120,30 @@
                 </a>
               </li>
             </ul>
+          </li> -->
+
+          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+            <a href="#main" class="jm-relative jm-flex jm-justify-center jm-items-center">
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">Main</span>
+            </a>
+          </li>
+
+          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+            <a href="#about" class="jm-relative jm-flex jm-justify-center jm-items-center">
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">About</span>
+            </a>
+          </li>
+
+          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+            <a href="#seller" class="jm-relative jm-flex jm-justify-center jm-items-center">
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">Seller</span>
+            </a>
+          </li>
+
+          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+            <a href="#buyer" class="jm-relative jm-flex jm-justify-center jm-items-center">
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">Buyer</span>
+            </a>
           </li>
         </ul>
 
@@ -161,29 +188,32 @@
       if (window.scrollY === 0) {
         $(".xf-scroll-change__logo-text").addClass("!jm-text-[#fff]");
         $(".xf-scroll-change__bg").addClass("transparent-bg");
+        $(".xf-scroll-change__bg").removeClass("jm-shadow-xl");
         $(".xf-scroll-change__bg > .jm-container").addClass("!jm-border-b-0");
         $(".jm-btn-scnu-search-wrap").css("background", "transparent");
         $(".jm-btn-scnu-search-svg").css("fill", "#fff");
         $(".change-icon-color").css("fill", "#fff");
         $(".xf-scroll-change__logo").addClass("jm-hidden");
         $(".xf-scroll-change__logo-white").removeClass("jm-hidden");
-        $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/10 jm-border-none hover:jm-bg-[#fff]/50");
+        $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
         $(".jm-btn-sign > span").addClass("jm-text-[#fff]/60");
       } else {
         $(".xf-scroll-change__logo-text").removeClass("!jm-text-[#fff]");
         $(".xf-scroll-change__bg").removeClass("transparent-bg");
+        $(".xf-scroll-change__bg").addClass("jm-shadow-xl");
         $(".xf-scroll-change__bg > .jm-container").removeClass("!jm-border-b-0");
         $(".jm-btn-scnu-search-wrap").css("background", "#fff");
         $(".jm-btn-scnu-search-svg").css("fill", "#777");
         $(".change-icon-color").css("fill", "#777");
         $(".xf-scroll-change__logo").removeClass("jm-hidden");
         $(".xf-scroll-change__logo-white").addClass("jm-hidden");
-        $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/10 jm-border-none hover:jm-bg-[#fff]/50");
+        $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
         $(".jm-btn-sign").addClass("!jm-border-[1px] !jm-border-[#911789f4]/60");
         $(".jm-btn-sign > span").addClass("jm-text-[#555]");
       }
       window.addEventListener("scroll", function (e) {
         if (window.scrollY === 0) {
+          $(".xf-scroll-change__bg").removeClass("jm-shadow-xl");
           $(".xf-scroll-change__logo-text").addClass("!jm-text-[#fff]");
           $(".xf-scroll-change__bg").addClass("transparent-bg");
           $(".xf-scroll-change__bg > .jm-container").addClass("!jm-border-b-0");
@@ -192,11 +222,12 @@
           $(".change-icon-color").css("fill", "#fff");
           $(".xf-scroll-change__logo").addClass("jm-hidden");
           $(".xf-scroll-change__logo-white").removeClass("jm-hidden");
-          $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/10 jm-border-none hover:jm-bg-[#fff]/50");
+          $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
           $(".jm-btn-sign").removeClass("!jm-border-[1px] !jm-border-[#911789f4]/60");
           $(".jm-btn-sign > span").removeClass("jm-text-[#555]");
           $(".jm-btn-sign > span").addClass("jm-text-[#fff]/60");
         } else {
+          $(".xf-scroll-change__bg").addClass("jm-shadow-xl");
           $(".xf-scroll-change__logo-text").removeClass("!jm-text-[#fff]");
           $(".xf-scroll-change__bg").removeClass("transparent-bg");
           $(".xf-scroll-change__bg > .jm-container").removeClass("!jm-border-b-0");
@@ -204,7 +235,7 @@
           $(".change-icon-color").css("fill", "#777");
           $(".xf-scroll-change__logo").removeClass("jm-hidden");
           $(".xf-scroll-change__logo-white").addClass("jm-hidden");
-          $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/10 jm-border-none hover:jm-bg-[#fff]/50");
+          $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
           $(".jm-btn-sign").addClass("!jm-border-[1px] !jm-border-[#911789f4]/60");
           $(".jm-btn-sign > span").removeClass("jm-text-[#fff]/60");
           $(".jm-btn-sign > span").addClass("jm-text-[#555]");
@@ -214,8 +245,9 @@
 
     <style>
       .xf-scroll-change__bg {
-        background: #fff;
+        background: #ffffffbc;
         border-bottom: 0px !important;
+        transition: 0.4s;
       }
       .xf-scroll-change__bg .gnb__menu > a > span {
         color: #3f3f3f;
@@ -228,6 +260,7 @@
       .xf-scroll-change__bg.transparent-bg {
         background: transparent !important;
         border-bottom: 0px !important;
+        transition: 0.4s;
       }
       .xf-scroll-change__bg.transparent-bg .gnb__menu > a > span {
         color: #ffffffeb;
@@ -248,20 +281,20 @@
     <!-- 모바일 gnb  -->
     <div class="jm-fixed jm-top-0 jm-flex jm-flex-row jm-w-full jm-h-[100vh] jm-overflow-hidden jm-hidden jm-z-[999]" data-element="gnb-wrapper--mobile">
       <div class="jm-absolute jm-left-0 jm-z-[999] jm-flex jm-flex-row jm-h-[100vh] jm-w-[calc(100%-64px)] jm-max-w-[310px] md:jm-max-w-[500px] jm-transition-all jm-duration-300 jm-translate-x-[-100%]" data-element="gnb-menu--mobile">
-          <div class="jm-relative jm-z-[2] jm-flex jm-flex-col jm-w-full jm-min-w-full jm-h-full jm-max-w-[500px] jm-bg-[#FFF] jm-overflow-y-auto">
+        <div class="jm-relative jm-z-[2] jm-flex jm-flex-col jm-w-full jm-min-w-full jm-h-full jm-max-w-[500px] jm-bg-[#FFF] jm-overflow-y-auto">
           <div class="jm-flex jm-flex-col jm-bg-[#EFEFEF] jm-py-[20px] jm-px-[24px] jm-pb-[30px] jm-border-box">
-                  <div class="jm-flex jm-flex-row jm-justify-end jm-py-[12px]">
-                      <span class="jm-flex jm-w-[32px] jm-h-[32px] jm-justify-center jm-items-center jm-ml-[10px] hover:jm-cursor-pointer" data-element="gnb-close--mobile">
-                          <svg class="jm-flex" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.2968 13.5815a.5.5 0 1 0 .707.7071l6.2889-6.2888 6.2888 6.2888a.5.5 0 1 0 .7071-.7071L7.9998 7.2927 14.4389.8536a.5.5 0 1 0-.7071-.7072L7.2927 6.5856.8536.1465a.5.5 0 1 0-.7072.7071l6.4391 6.439-6.2887 6.2889Z" fill="#000"/></svg>
-                      </span>
-                  </div>
-                  <div class="jm-flex jm-mt-[30px] jm-mb-[24px] jm-flex-row jm-justify-between">
-                      <div class="jm-flex jm-flex-row">
-                          <div class="jm-flex jm-justify-center jm-ite한ms-center">
-                              <div class="jm-flex jm-mr-[12px] jm-w-[48px] jm-h-[48px] jm-bg-[#ECEFF1] jm-rounded-full jm-bg-no-repeat jm-bg-cover jm-overflow-hidden md:jm-mr-[16px] jm-bg-[#777777]" ></div>
-                          </div>
-                          <div class="jm-flex jm-flex-col">
-                              <!-- @if(auth()->check())
+            <div class="jm-flex jm-flex-row jm-justify-end jm-py-[12px]">
+              <span class="jm-flex jm-w-[32px] jm-h-[32px] jm-justify-center jm-items-center jm-ml-[10px] hover:jm-cursor-pointer" data-element="gnb-close--mobile">
+                <svg class="jm-flex" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.2968 13.5815a.5.5 0 1 0 .707.7071l6.2889-6.2888 6.2888 6.2888a.5.5 0 1 0 .7071-.7071L7.9998 7.2927 14.4389.8536a.5.5 0 1 0-.7071-.7072L7.2927 6.5856.8536.1465a.5.5 0 1 0-.7072.7071l6.4391 6.439-6.2887 6.2889Z" fill="#000" /></svg>
+              </span>
+            </div>
+            <div class="jm-flex jm-mt-[30px] jm-mb-[24px] jm-flex-row jm-justify-between">
+              <div class="jm-flex jm-flex-row">
+                <div class="jm-flex jm-justify-center jm-ite한ms-center">
+                  <div class="jm-flex jm-mr-[12px] jm-w-[48px] jm-h-[48px] jm-rounded-full jm-bg-no-repeat jm-bg-cover jm-overflow-hidden md:jm-mr-[16px] jm-bg-[#fff]"></div>
+                </div>
+                <div class="jm-flex jm-flex-col">
+                  <!-- @if(auth()->check())
                               <div class="jm-flex jm-flex-row">
                                       <span class="jm-flex jm-text-[#383838]  jm-text[17px] jm-leading-[25px] jm-whitespasce-nowrap">{{ Auth::user()->getDisplayName() }}</span>
                                       <span class="jm-flex jm-text-[#383838] jm-text[17px] jm-leading-[25px]">님</span>
@@ -270,370 +303,308 @@
                                   <span class="jm-flex jm-text-[#383838] jm-text[17px] jm-leading-[25px] jm-whitespasce-nowrap">로그아웃</span>
                               </a>
                               @else -->
-                              <a href="/auth/login" class="jm-flex jm-flex-row">
-                                  <span class="jm-flex jm-text-[#383838] jm-text[17px] jm-leading-[25px] jm-whitespasce-nowrap">로그인해주세요</span>
-                              </a>
-                              <div class="jm-flex jm-items-center">
-                                  <span class="jm-flex jm-text-[13px] jm-text-[#383838] ">환영합니다!</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="jm-flex jm-items-center jm-justify-center">
-                          <a href="#" class="jm-flex jm-w-[32px] jm-h-[32px] jm-justify-center jm-items-center jm-rounded-[4px] hover:jm-bg-[#000]/[.08] hover:jm-cursor-pointer jm-transition-all">
-                              <svg class="jm-flex" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m21.32 9.55-1.89-.63.89-1.78A1.0004 1.0004 0 0 0 20.13 6L18 3.87a1.0002 1.0002 0 0 0-1.15-.19l-1.78.89-.63-1.89A.9997.9997 0 0 0 13.5 2h-3a1 1 0 0 0-.95.68l-.63 1.89-1.78-.89A1 1 0 0 0 6 3.87L3.87 6a1 1 0 0 0-.19 1.15l.89 1.78-1.89.63a1 1 0 0 0-.68.94v3a.9998.9998 0 0 0 .68.95l1.89.63-.89 1.78A.9999.9999 0 0 0 3.87 18L6 20.13a1.0003 1.0003 0 0 0 1.15.19l1.78-.89.63 1.89a1.0004 1.0004 0 0 0 .95.68h3a1.0003 1.0003 0 0 0 .95-.68l.63-1.89 1.78.89a1.0002 1.0002 0 0 0 1.13-.19L20.13 18a1.0004 1.0004 0 0 0 .19-1.15l-.89-1.78 1.89-.63a.9999.9999 0 0 0 .68-.94v-3a1.0004 1.0004 0 0 0-.68-.95ZM20 12.78l-1.2.4A2.0002 2.0002 0 0 0 17.64 16l.57 1.14-1.1 1.1-1.11-.6a1.9996 1.9996 0 0 0-1.6597-.0566A2.0003 2.0003 0 0 0 13.21 18.8l-.4 1.2h-1.59l-.4-1.2A2.0002 2.0002 0 0 0 8 17.64l-1.14.57-1.1-1.1.6-1.11a2.0001 2.0001 0 0 0-1.16-2.82l-1.2-.4v-1.56l1.2-.4A2.0002 2.0002 0 0 0 6.36 8l-.57-1.11 1.1-1.1L8 6.36a2 2 0 0 0 2.82-1.16l.4-1.2h1.56l.4 1.2A2.0002 2.0002 0 0 0 16 6.36l1.14-.57 1.1 1.1-.6 1.11a2 2 0 0 0 1.16 2.79l1.2.4v1.59ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 6a2 2 0 0 1-1.9616-2.3902 2.0004 2.0004 0 0 1 1.5714-1.5714A2 2 0 1 1 12 14Z" fill="#777"/></svg>
-                          </a>
-                      </div>
+                  <a href="/auth/login" class="jm-flex jm-flex-row">
+                    <span class="jm-flex jm-text-[#911789f4] jm-text[17px] jm-leading-[25px] jm-whitespasce-nowrap">로그인해주세요</span>
+                  </a>
+                  <div class="jm-flex jm-items-center">
+                    <span class="jm-flex jm-text-[13px] jm-text-[#383838]">샘플릭스 방문을 환영합니다!</span>
                   </div>
-  
+                </div>
               </div>
-              <div class="jm-flex jm-flex-col jm-pt-[30px] jm-border-box jm-bg-[#fff]">
-                  <div class="jm-flex jm-flex-col">
-                      <ul class="jm-flex jm-flex-col">
+              <div class="jm-flex jm-items-center jm-justify-center">
+                <a href="#" class="jm-flex jm-w-[32px] jm-h-[32px] jm-justify-center jm-items-center jm-rounded-[4px] hover:jm-bg-[#000]/[.08] hover:jm-cursor-pointer jm-transition-all">
+                  <svg class="jm-flex" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m21.32 9.55-1.89-.63.89-1.78A1.0004 1.0004 0 0 0 20.13 6L18 3.87a1.0002 1.0002 0 0 0-1.15-.19l-1.78.89-.63-1.89A.9997.9997 0 0 0 13.5 2h-3a1 1 0 0 0-.95.68l-.63 1.89-1.78-.89A1 1 0 0 0 6 3.87L3.87 6a1 1 0 0 0-.19 1.15l.89 1.78-1.89.63a1 1 0 0 0-.68.94v3a.9998.9998 0 0 0 .68.95l1.89.63-.89 1.78A.9999.9999 0 0 0 3.87 18L6 20.13a1.0003 1.0003 0 0 0 1.15.19l1.78-.89.63 1.89a1.0004 1.0004 0 0 0 .95.68h3a1.0003 1.0003 0 0 0 .95-.68l.63-1.89 1.78.89a1.0002 1.0002 0 0 0 1.13-.19L20.13 18a1.0004 1.0004 0 0 0 .19-1.15l-.89-1.78 1.89-.63a.9999.9999 0 0 0 .68-.94v-3a1.0004 1.0004 0 0 0-.68-.95ZM20 12.78l-1.2.4A2.0002 2.0002 0 0 0 17.64 16l.57 1.14-1.1 1.1-1.11-.6a1.9996 1.9996 0 0 0-1.6597-.0566A2.0003 2.0003 0 0 0 13.21 18.8l-.4 1.2h-1.59l-.4-1.2A2.0002 2.0002 0 0 0 8 17.64l-1.14.57-1.1-1.1.6-1.11a2.0001 2.0001 0 0 0-1.16-2.82l-1.2-.4v-1.56l1.2-.4A2.0002 2.0002 0 0 0 6.36 8l-.57-1.11 1.1-1.1L8 6.36a2 2 0 0 0 2.82-1.16l.4-1.2h1.56l.4 1.2A2.0002 2.0002 0 0 0 16 6.36l1.14-.57 1.1 1.1-.6 1.11a2 2 0 0 0 1.16 2.79l1.2.4v1.59ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 6a2 2 0 0 1-1.9616-2.3902 2.0004 2.0004 0 0 1 1.5714-1.5714A2 2 0 1 1 12 14Z"
+                      fill="#777"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="jm-flex jm-flex-col jm-pt-[30px] jm-border-box jm-bg-[#fff]">
+            <div class="jm-flex jm-flex-col">
+              <ul class="jm-flex jm-flex-col">
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-group jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center jm-cursor-pointer">
+                    <a href="#" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-whitespace-nowra group-hover:!jm-text-[#911789f4]"> 메뉴 2뎁스 </a>
+                    <div class="jm-absolute jm-right-0 jm-stroke-[#B7B7B7] group-hover:!jm-stroke-[#911789f4]">
+                      <svg class="jm-plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.4" d="M10 4.166v11.667M4.167 10h11.666" /></svg>
+                      <svg class="jm-minus-icon" style="display: none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.4" d="M4.167 10h11.666" /></svg>
+                    </div>
+                  </div>
+                  <ul class="jm-submenu-mobile jm-flex jm-flex-col jm-mx-[-25px] jm-mb-[10px] jm-px-[25px] jm-bg-[#F8F8F8] jm-py-[15px] jm-border-box" style="display: none">
+                    <li class="jm-w-full">
+                      <a href="#" class="jm-inline-block jm-py-[5px] jm-w-full jm-font-[500] jm-text-[#787878] hover:jm-text-[#555555] jm-text-[16px] jm-leading-[23px] jm-tracking-[-0.02em] gnb__submenu-link">
+                        <span class="jm-font-[500] jm-text-[16px] jm-leading-[23px] jm-tracking-[-0.02em] jm-text-[#555]">2뎁스</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
 
-                                      <li class="jm-relative jm-w-full jm-px-[25px]">
-                                          <div class="jm-group jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center jm-cursor-pointer">
-                                              <a
-                                                  href="{{ url($menu1st['url']) }}"
-                                                  @if ($menu1st['target'] !== '_self') target="{{ $menu1st['target'] }}" @endif
-                                                  class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-whitespace-nowra group-hover:!jm-text-[#911789f4]"
-                                              >
-                                                 메뉴 2뎁스
-                                              </a>
-                                              <div class="jm-absolute jm-right-0 jm-stroke-[#B7B7B7]  group-hover:!jm-stroke-[#911789f4] ">
-                                                  <svg class="jm-plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.4" d="M10 4.166v11.667M4.167 10h11.666"/></svg>
-                                                  <svg class="jm-minus-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.4" d="M4.167 10h11.666"/></svg>
-                                              </div>
-                                          </div>
-                                          <ul class="jm-submenu-mobile jm-flex jm-flex-col jm-mx-[-25px] jm-mb-[10px] jm-px-[25px] jm-bg-[#F8F8F8] jm-py-[15px] jm-border-box" style="display: none;">
-                                            
-                                              <li class="jm-w-full">
-                                                  <a href="#"  class="jm-inline-block jm-py-[5px] jm-w-full jm-font-[500] jm-text-[#787878] hover:jm-text-[#555555] jm-text-[16px] jm-leading-[23px] jm-tracking-[-0.02em] gnb__submenu-link ">
-                                                      <span class="jm-font-[500] jm-text-[16px] jm-leading-[23px] jm-tracking-[-0.02em] jm-text-[#555]">2뎁스</span>
-                                                  </a>
-                                               
-                                              </li>
-                                            
-                                          </ul>
-                                      </li>
-                     
-                                      <li class="jm-relative jm-w-full jm-px-[25px]">
-                                          <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
-                                              <a
-                                                  href="{{ url($menu1st['url']) }}"
-                                                  @if ($menu1st['target'] !== '_self') target="{{ $menu1st['target'] }}" @endif
-                                                  class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#911789f4]"
-                                              >
-                                                 메뉴1뎁스
-                                              </a>
-                                          </div>
-                                      </li>
-           
-           
-                      </ul>
-                      
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
+                    <a href="#main" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> Main </a>
                   </div>
-              </div>
+                </li>
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
+                    <a href="#about" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> About </a>
+                  </div>
+                </li>
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
+                    <a href="#seller" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> Seller </a>
+                  </div>
+                </li>
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
+                    <a href="#buyer" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> Buyer </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="jm-flex jm-justify-center jm-items-start jm-mx-[23px] jm-mt-[22px] hover:jm-cursor-pointer" data-element="gnb-close--mobile">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><rect width="22" height="2.2" y="15.557" fill="#fff" rx="1.1" transform="rotate(-45 0 15.557)"/><rect width="22" height="2.2" x="1.556" fill="#fff" rx="1.1" transform="rotate(45 1.556 0)"/></svg>
-          </div>
+        </div>
+        <div class="jm-flex jm-justify-center jm-items-start jm-mx-[23px] jm-mt-[22px] hover:jm-cursor-pointer" data-element="gnb-close--mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <rect width="22" height="2.2" y="15.557" fill="#fff" rx="1.1" transform="rotate(-45 0 15.557)" />
+            <rect width="22" height="2.2" x="1.556" fill="#fff" rx="1.1" transform="rotate(45 1.556 0)" />
+          </svg>
+        </div>
       </div>
       <div class="jm-absolute jm-z-[1] jm-w-full jm-h-full jm-bg-[#000]/[0]" data-element="gnb-dimd--mobile"></div>
-  </div>
-  
-  <script>
-      window.addEventListener('DOMContentLoaded', function () {
-          $(function () {
-              $('[data-element="gnb--mobile"]').on('click', function () {
-                  console.log('click');
-                  $('html').css('overflow', 'hidden');
-                  $('[data-element="gnb-wrapper--mobile"]').show().removeClass('jm-hidden');
-                  setTimeout(function () {
-                      $('[data-element="gnb-menu--mobile"]').addClass('!jm-translate-x-[0]');
-                      $('[data-element="gnb-dimd--mobile"]').removeClass('jm-bg-[#000]/[0]').addClass('jm-bg-[rgba(0,0,0,0.6)]');
-                  });
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        $(
+          (function () {
+            $('[data-element="gnb--mobile"]').on("click", function () {
+              console.log("click");
+              $("html").css("overflow", "hidden");
+              $('[data-element="gnb-wrapper--mobile"]').show().removeClass("jm-hidden");
+              setTimeout(function () {
+                $('[data-element="gnb-menu--mobile"]').addClass("!jm-translate-x-[0]");
+                $('[data-element="gnb-dimd--mobile"]').removeClass("jm-bg-[#000]/[0]").addClass("jm-bg-[rgba(0,0,0,0.6)]");
               });
-              $('[data-element="gnb-close--mobile"], [data-element="gnb-dimd--mobile"]').on('click', function () {
-                  $('[data-element="gnb-wrapper--mobile"]').fadeOut();
-                  $('html').css('overflow', '');
-                  $('[data-element="gnb-menu--mobile"]').removeClass('!jm-translate-x-[0]');
-                  $('[data-element="gnb-dimd--mobile"]').addClass('jm-bg-[#000]/[0]').removeClass('jm-bg-[rgba(0,0,0,0.6)]');
-              });
-          }());
+            });
+            $('[data-element="gnb-close--mobile"], [data-element="gnb-dimd--mobile"]').on("click", function () {
+              $('[data-element="gnb-wrapper--mobile"]').fadeOut();
+              $("html").css("overflow", "");
+              $('[data-element="gnb-menu--mobile"]').removeClass("!jm-translate-x-[0]");
+              $('[data-element="gnb-dimd--mobile"]').addClass("jm-bg-[#000]/[0]").removeClass("jm-bg-[rgba(0,0,0,0.6)]");
+            });
+          })()
+        );
       });
-  </script>
-  
-  <script>
-    $(function(){
-      // ===== 모바일 햄버거 메뉴 =====
-      $('.jm-submenu-btn').click(function (e) {
-        if ($(this).hasClass('active')) {
-          $(this).removeClass('active');
-          $(this).next('.jm-submenu-mobile').stop().slideUp();
-                  $(this).find('.jm-plus-icon').css('display', 'block');
-                  $(this).find('.jm-minus-icon').css('display', 'none');
-        } else {
-          $(this).addClass('active');
-          $(this).next('.jm-submenu-mobile').stop().slideDown();
-                  $(this).find('.jm-plus-icon').css('display', 'none');
-                  $(this).find('.jm-minus-icon').css('display', 'block');
-        }
+    </script>
+
+    <script>
+      $(function () {
+        // ===== 모바일 햄버거 메뉴 =====
+        $(".jm-submenu-btn").click(function (e) {
+          if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this).next(".jm-submenu-mobile").stop().slideUp();
+            $(this).find(".jm-plus-icon").css("display", "block");
+            $(this).find(".jm-minus-icon").css("display", "none");
+          } else {
+            $(this).addClass("active");
+            $(this).next(".jm-submenu-mobile").stop().slideDown();
+            $(this).find(".jm-plus-icon").css("display", "none");
+            $(this).find(".jm-minus-icon").css("display", "block");
+          }
+        });
+        // ===== //모바일 햄버거 메뉴 =====
       });
-      // ===== //모바일 햄버거 메뉴 =====
-      
-    });
-  </script>
-  
-  
+    </script>
+
     <!-- 모바일 gnb -->
+    <div class="samplix-landing-video jm-fixed jm-w-full jm-h-[100vh] jm-top-0 jm-left-0 jm-z-[-2] jm-blur-[5px]">
+      <video class="jm-object-cover jm-w-full jm-h-full" autoplay="" muted="" loop="" playsinline="">
+        <source src="./assets/video/main-bg.mp4" type="video/mp4" />
+        브라우져가 동영상을 지원하지 않습니다.
+      </video>
+    </div>
+    <div class="samplix-landing-video-cover jm-fixed jm-w-full jm-h-[100vh] jm-top-0 jm-left-0 jm-z-[-1]" style="background-color: rgba(0, 0, 0, 0.3)"></div>
 
-
-      <div class="jm-w-[100vw] jm-bg-[#333]">
-        <div class="jm-w-full jm-h-full jm-min-h-[100vh] jm-overflow-hidden" style="scroll-behavior: smooth">
-          <div class="jm-flex jm-flex-col jm-justify-between jm-w-full jm-h-auto lg:!jm-h-[100vh]">
-            <div data-aos="fade-down" data-aos-duration="1500" class="jm-relative jm-flex jm-justify-center jm-items-center jm-w-full jm-h-full jm-bg-[#fff] jm-aspect-[1/1.44] lg:jm-aspect-unset jm-bg-cover jm-bg-center aos-init aos-animate">
-              <div class="jm-w-full jm-h-full jm-max-w-[1140px] jm-mx-auto jm-flex jm-justify-center jm-items-center lg:jm-items-end lg:jm-pb-[180px] jm-px-[20px]">
-                <!-- <div class="jm-flex jm-flex-col jm-justify-center jm-items-center lg:jm-gap-y-[23px] jm-gap-y-[10px] jm-w-full jm-z-[3]">
-                  <div class="jm-flex jm-flex-col jm-gap-y-[8px] lg:jm-gap-y-[20px] jm-w-full jm-max-w-[302px] lg:jm-max-w-[696px]">
-
-                    <a href="tel:02-2677-0175" data-aos="fade-up" data-aos-duration="1900" class="jm-flex jm-items-center jm-justify-center jm-gap-x-[8px] lg:jm-gap-x-[24px] jm-w-full jm-max-w-[215px] lg:jm-max-w-[386px] jm-bg-[#000] jm-px-[5px] jm-py-[11px] lg:jm-py-[17px] jm-rounded-[100px] jm-mx-auto aos-init aos-animate">
-                      <svg class="jm-w-[20px] lg:jm-w-[30px]" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_300_293)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M18.027 27.3828C18.027 26.3459 17.1864 25.5054 16.1495 25.5054H13.8505C13.3526 25.5054 12.875 25.7032 12.5229 26.0553C12.1709 26.4073 11.973 26.8849 11.973 27.3828C11.973 28.4197 12.8136 29.2603 13.8505 29.2603H16.1495C17.1864 29.2603 18.027 28.4197 18.027 27.3828ZM3.94693 22.5416C4.26053 22.5656 4.63992 22.5794 5.02102 22.557C5.22404 23.5866 5.72842 24.5416 6.48129 25.2945C7.48078 26.294 8.83635 26.8555 10.2498 26.8555H10.9662C10.9346 27.0283 10.9184 27.2047 10.9184 27.3828C10.9184 27.5629 10.9346 27.7392 10.9657 27.9102H10.2498C8.55662 27.9102 6.93275 27.2376 5.73551 26.0403C4.78037 25.0851 4.1591 23.8585 3.94693 22.5416ZM3.41045 21.4194C2.57777 21.279 1.80293 20.8831 1.19807 20.2782C0.430957 19.5111 0 18.4706 0 17.3858V14.893C0 13.8082 0.430957 12.7677 1.19807 12.0006C1.96518 11.2335 3.00562 10.8025 4.09049 10.8025H4.36277C4.79801 5.30896 9.39422 0.986328 15 0.986328C20.6058 0.986328 25.202 5.30896 25.6372 10.8025H25.9095C26.9944 10.8025 28.0348 11.2335 28.8019 12.0006C29.569 12.7677 30 13.8082 30 14.893V17.3858C30 18.4706 29.569 19.5111 28.8019 20.2782C28.0348 21.0454 26.9944 21.4763 25.9095 21.4763H24.7024C24.2018 21.4763 23.796 21.0704 23.796 20.5699V11.6573C23.796 6.79941 19.8579 2.86133 15 2.86133C10.1421 2.86133 6.20402 6.79941 6.20402 11.6573V20.5699C6.20402 20.9233 6.0017 21.2296 5.7065 21.3791C4.89393 21.661 3.63375 21.4571 3.41045 21.4194Z"
-                            fill="url(#paint0_linear_300_293)"
-                          ></path>
-                        </g>
-                        <defs>
-                          <linearGradient id="paint0_linear_300_293" x1="0.932643" y1="29.2603" x2="28.9119" y2="29.2603" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F7E13A"></stop>
-                            <stop offset="0.461391" stop-color="#D49D11"></stop>
-                            <stop offset="0.979167" stop-color="#F7E13A"></stop>
-                          </linearGradient>
-                          <clipPath id="clip0_300_293">
-                            <rect y="0.123291" width="30" height="30" rx="15" fill="white"></rect>
-                          </clipPath>
-                        </defs>
-                      </svg>
-
-                      <p class="jm-text-[#fff]/80 jm-text-[13px] lg:jm-text-[25px] jm-font-[500] jm-tracking-[-1.4px]">고객센터 : 02-2677-0175</p>
-                    </a>
-                  </div>
-                </div> -->
-                <div class="chzone-landing-video jm-absolute jm-w-full jm-h-full jm-top-0 jm-left-0 jm-z-[1] jm-blur-[5px]">
-                  <video class="jm-object-cover jm-w-full jm-h-full" autoplay="" muted="" loop="" playsinline="">
-                    <source src="./assets/video/main-bg.mp4" type="video/mp4" />
-                    브라우져가 동영상을 지원하지 않습니다.
-                  </video>
-                </div>
-                <div class="chzone-landing-video-cover jm-absolute jm-w-full jm-h-full jm-top-0 jm-left-0 jm-z-[2]" style="background-color: rgba(0, 0, 0, 0.3)"></div>
-                <!-- <a href="#jm-chzone-landing-contents-area" class="chzone-go-to-contents jm-fixed jm-bottom-[70px] !jm-left-[50%] !jm-translate-x-[-50%] !jm-animate-bounce jm-z-[3]">
-                  <svg class="jm-w-[60px] jm-hidden lg:!jm-block" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.7"></circle>
-                    <circle cx="30" cy="30" r="29.5" stroke="white" stroke-opacity="0.7"></circle>
-                    <g clip-path="url(#clip0_300_279)">
-                      <path d="M24.2623 37.116L25.6085 35.7378L29.0059 39.1352L29.0059 14.616L30.929 14.616L30.929 39.1672L34.3265 35.7698L35.6726 37.116L29.9675 42.8211L24.2623 37.116Z" fill="url(#paint0_linear_300_279)"></path>
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_300_279" x1="24.2624" y1="15.4928" x2="24.2623" y2="41.7981" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F7E13A"></stop>
-                        <stop offset="0.461391" stop-color="#fff"></stop>
-                        <stop offset="0.979167" stop-color="#fff"></stop>
-                      </linearGradient>
-                      <clipPath id="clip0_300_279">
-                        <rect width="30.7692" height="30.7692" fill="white" transform="translate(45.384 14.616) rotate(90)"></rect>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a> -->
-              </div>
-            </div>
+    <div class="jm-w-[100vw] jm-bg-transparent">
+      <div id="main" class="jm-w-full jm-h-full jm-min-h-[100vh] jm-relative" style="scroll-behavior: smooth">
+        <a href="#about" class="jm-absolute jm-bottom-[90px] jm-left-[42.7%] lg:jm-left-[48%] jm-animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" class="jm-w-[60px] lg:jm-w-[77px]" viewBox="0 0 77 53" fill="none">
+            <g opacity="0.8">
+              <path
+                opacity="0.8"
+                d="M7.01754 41.9636C6.95789 41.4598 6.71593 41.0687 6.29169 40.7903C5.86745 40.5119 5.34709 40.3727 4.73061 40.3727C4.27985 40.3727 3.88544 40.4456 3.54737 40.5915C3.21262 40.7373 2.95078 40.9378 2.76186 41.193C2.57626 41.4482 2.48345 41.7382 2.48345 42.063C2.48345 42.3348 2.54808 42.5685 2.67735 42.764C2.80992 42.9563 2.97896 43.117 3.18445 43.2463C3.38994 43.3722 3.60538 43.4766 3.83075 43.5595C4.05613 43.639 4.26328 43.7037 4.4522 43.7534L5.48629 44.0318C5.75145 44.1014 6.04643 44.1975 6.37124 44.3201C6.69936 44.4428 7.01257 44.6102 7.31087 44.8223C7.61248 45.0311 7.86106 45.2995 8.05661 45.6277C8.25216 45.9558 8.34993 46.3585 8.34993 46.8358C8.34993 47.386 8.20575 47.8831 7.9174 48.3272C7.63236 48.7714 7.21475 49.1244 6.66456 49.3862C6.11769 49.648 5.45315 49.779 4.67095 49.779C3.94179 49.779 3.31039 49.6613 2.77678 49.426C2.24647 49.1906 1.82886 48.8625 1.52394 48.4416C1.22233 48.0207 1.05164 47.5318 1.01186 46.975H2.28459C2.31773 47.3594 2.44699 47.6776 2.67237 47.9295C2.90107 48.1781 3.18942 48.3637 3.53743 48.4863C3.88876 48.6057 4.2666 48.6653 4.67095 48.6653C5.1416 48.6653 5.56418 48.5891 5.93871 48.4366C6.31324 48.2808 6.60987 48.0654 6.82862 47.7903C7.04737 47.5119 7.15675 47.1871 7.15675 46.8159C7.15675 46.4778 7.06229 46.2027 6.87337 45.9906C6.68445 45.7785 6.43587 45.6061 6.12763 45.4736C5.81939 45.341 5.48629 45.225 5.12834 45.1255L3.8755 44.7676C3.08004 44.5389 2.45031 44.2124 1.98629 43.7882C1.52228 43.3639 1.29027 42.8088 1.29027 42.1227C1.29027 41.5526 1.44439 41.0555 1.75263 40.6312C2.06418 40.2037 2.4818 39.8722 3.00547 39.6369C3.53246 39.3983 4.12076 39.279 4.77039 39.279C5.42664 39.279 6.00997 39.3966 6.52039 39.6319C7.0308 39.8639 7.43516 40.1821 7.73345 40.5865C8.03506 40.9908 8.19415 41.4499 8.21073 41.9636H7.01754ZM12.5203 49.7591C11.8044 49.7591 11.1879 49.59 10.6708 49.252C10.1538 48.9139 9.75607 48.4482 9.47766 47.8549C9.19926 47.2617 9.06005 46.5839 9.06005 45.8216C9.06005 45.046 9.20257 44.3616 9.48761 43.7683C9.77596 43.1717 10.177 42.706 10.6907 42.3713C11.2078 42.0332 11.811 41.8642 12.5004 41.8642C13.0373 41.8642 13.5212 41.9636 13.9521 42.1625C14.383 42.3613 14.736 42.6397 15.011 42.9977C15.2861 43.3557 15.4568 43.7733 15.5231 44.2505H14.3498C14.2603 43.9025 14.0615 43.5943 13.7532 43.3258C13.4483 43.054 13.0373 42.9182 12.5203 42.9182C12.0629 42.9182 11.6619 43.0375 11.3172 43.2761C10.9758 43.5114 10.709 43.8445 10.5167 44.2754C10.3278 44.703 10.2333 45.2051 10.2333 45.7818C10.2333 46.3718 10.3261 46.8855 10.5118 47.323C10.7007 47.7605 10.9658 48.1002 11.3072 48.3422C11.6519 48.5841 12.0563 48.7051 12.5203 48.7051C12.8252 48.7051 13.102 48.6521 13.3505 48.546C13.5991 48.4399 13.8096 48.2875 13.9819 48.0886C14.1543 47.8897 14.2769 47.6511 14.3498 47.3727H15.5231C15.4568 47.8235 15.2928 48.2295 15.0309 48.5907C14.7724 48.9487 14.4294 49.2337 14.0018 49.4459C13.5776 49.6547 13.0837 49.7591 12.5203 49.7591ZM19.5406 49.7591C18.8512 49.7591 18.2463 49.595 17.726 49.2669C17.2089 48.9388 16.8046 48.4797 16.5129 47.8897C16.2245 47.2998 16.0804 46.6104 16.0804 45.8216C16.0804 45.0261 16.2245 44.3317 16.5129 43.7385C16.8046 43.1452 17.2089 42.6845 17.726 42.3564C18.2463 42.0282 18.8512 41.8642 19.5406 41.8642C20.23 41.8642 20.8332 42.0282 21.3503 42.3564C21.8706 42.6845 22.275 43.1452 22.5633 43.7385C22.855 44.3317 23.0008 45.0261 23.0008 45.8216C23.0008 46.6104 22.855 47.2998 22.5633 47.8897C22.275 48.4797 21.8706 48.9388 21.3503 49.2669C20.8332 49.595 20.23 49.7591 19.5406 49.7591ZM19.5406 48.7051C20.0643 48.7051 20.4951 48.5709 20.8332 48.3024C21.1713 48.0339 21.4215 47.6809 21.5839 47.2434C21.7463 46.8059 21.8275 46.332 21.8275 45.8216C21.8275 45.3111 21.7463 44.8355 21.5839 44.3947C21.4215 43.9539 21.1713 43.5976 20.8332 43.3258C20.4951 43.054 20.0643 42.9182 19.5406 42.9182C19.0169 42.9182 18.586 43.054 18.248 43.3258C17.9099 43.5976 17.6597 43.9539 17.4973 44.3947C17.3349 44.8355 17.2537 45.3111 17.2537 45.8216C17.2537 46.332 17.3349 46.8059 17.4973 47.2434C17.6597 47.6809 17.9099 48.0339 18.248 48.3024C18.586 48.5709 19.0169 48.7051 19.5406 48.7051ZM23.9918 49.6V41.9636H25.1254V43.117H25.2049C25.3441 42.7392 25.596 42.4326 25.9606 42.1973C26.3252 41.962 26.7362 41.8443 27.1935 41.8443C27.2797 41.8443 27.3874 41.846 27.5167 41.8493C27.646 41.8526 27.7437 41.8576 27.81 41.8642V43.0574C27.7702 43.0474 27.6791 43.0325 27.5366 43.0126C27.3974 42.9894 27.2499 42.9778 27.0941 42.9778C26.7229 42.9778 26.3915 43.0557 26.0998 43.2115C25.8114 43.3639 25.5827 43.5761 25.4137 43.8478C25.248 44.1163 25.1651 44.4229 25.1651 44.7676V49.6H23.9918ZM31.2707 49.7591C30.5813 49.7591 29.9764 49.595 29.456 49.2669C28.939 48.9388 28.5346 48.4797 28.243 47.8897C27.9546 47.2998 27.8104 46.6104 27.8104 45.8216C27.8104 45.0261 27.9546 44.3317 28.243 43.7385C28.5346 43.1452 28.939 42.6845 29.456 42.3564C29.9764 42.0282 30.5813 41.8642 31.2707 41.8642C31.9601 41.8642 32.5633 42.0282 33.0803 42.3564C33.6007 42.6845 34.005 43.1452 34.2934 43.7385C34.5851 44.3317 34.7309 45.0261 34.7309 45.8216C34.7309 46.6104 34.5851 47.2998 34.2934 47.8897C34.005 48.4797 33.6007 48.9388 33.0803 49.2669C32.5633 49.595 31.9601 49.7591 31.2707 49.7591ZM31.2707 48.7051C31.7943 48.7051 32.2252 48.5709 32.5633 48.3024C32.9014 48.0339 33.1516 47.6809 33.314 47.2434C33.4764 46.8059 33.5576 46.332 33.5576 45.8216C33.5576 45.3111 33.4764 44.8355 33.314 44.3947C33.1516 43.9539 32.9014 43.5976 32.5633 43.3258C32.2252 43.054 31.7943 42.9182 31.2707 42.9182C30.747 42.9182 30.3161 43.054 29.9781 43.3258C29.64 43.5976 29.3897 43.9539 29.2273 44.3947C29.0649 44.8355 28.9837 45.3111 28.9837 45.8216C28.9837 46.332 29.0649 46.8059 29.2273 47.2434C29.3897 47.6809 29.64 48.0339 29.9781 48.3024C30.3161 48.5709 30.747 48.7051 31.2707 48.7051ZM36.8952 39.4182V49.6H35.7219V39.4182H36.8952ZM39.4175 39.4182V49.6H38.2442V39.4182H39.4175ZM46.7875 49.7591C46.1511 49.7591 45.5893 49.5983 45.1021 49.2768C44.6149 48.952 44.2337 48.4946 43.9586 47.9047C43.6835 47.3114 43.546 46.6104 43.546 45.8017C43.546 44.9996 43.6835 44.3036 43.9586 43.7136C44.2337 43.1236 44.6165 42.6679 45.1071 42.3464C45.5976 42.0249 46.1644 41.8642 46.8074 41.8642C47.3045 41.8642 47.6973 41.947 47.9856 42.1128C48.2773 42.2752 48.4993 42.4608 48.6518 42.6696C48.8076 42.8751 48.9286 43.0441 49.0147 43.1767H49.1142V39.4182H50.2875V49.6H49.1539V48.4267H49.0147C48.9286 48.5659 48.8059 48.7415 48.6468 48.9537C48.4877 49.1625 48.2607 49.3497 47.9657 49.5155C47.6708 49.6779 47.278 49.7591 46.7875 49.7591ZM46.9466 48.7051C47.4172 48.7051 47.8149 48.5825 48.1397 48.3372C48.4645 48.0886 48.7115 47.7456 48.8805 47.3081C49.0495 46.8673 49.1341 46.3585 49.1341 45.7818C49.1341 45.2117 49.0512 44.7129 48.8855 44.2853C48.7198 43.8545 48.4745 43.5197 48.1497 43.2811C47.8249 43.0391 47.4238 42.9182 46.9466 42.9182C46.4494 42.9182 46.0351 43.0458 45.7037 43.301C45.3755 43.5529 45.1286 43.8959 44.9629 44.3301C44.8005 44.761 44.7193 45.2449 44.7193 45.7818C44.7193 46.3254 44.8021 46.8192 44.9679 47.2633C45.1369 47.7041 45.3855 48.0555 45.7136 48.3173C46.045 48.5758 46.456 48.7051 46.9466 48.7051ZM54.9015 49.7591C54.2121 49.7591 53.6073 49.595 53.0869 49.2669C52.5699 48.9388 52.1655 48.4797 51.8738 47.8897C51.5855 47.2998 51.4413 46.6104 51.4413 45.8216C51.4413 45.0261 51.5855 44.3317 51.8738 43.7385C52.1655 43.1452 52.5699 42.6845 53.0869 42.3564C53.6073 42.0282 54.2121 41.8642 54.9015 41.8642C55.5909 41.8642 56.1941 42.0282 56.7112 42.3564C57.2315 42.6845 57.6359 43.1452 57.9243 43.7385C58.2159 44.3317 58.3618 45.0261 58.3618 45.8216C58.3618 46.6104 58.2159 47.2998 57.9243 47.8897C57.6359 48.4797 57.2315 48.9388 56.7112 49.2669C56.1941 49.595 55.5909 49.7591 54.9015 49.7591ZM54.9015 48.7051C55.4252 48.7051 55.8561 48.5709 56.1941 48.3024C56.5322 48.0339 56.7824 47.6809 56.9449 47.2434C57.1073 46.8059 57.1885 46.332 57.1885 45.8216C57.1885 45.3111 57.1073 44.8355 56.9449 44.3947C56.7824 43.9539 56.5322 43.5976 56.1941 43.3258C55.8561 43.054 55.4252 42.9182 54.9015 42.9182C54.3779 42.9182 53.947 43.054 53.6089 43.3258C53.2708 43.5976 53.0206 43.9539 52.8582 44.3947C52.6958 44.8355 52.6146 45.3111 52.6146 45.8216C52.6146 46.332 52.6958 46.8059 52.8582 47.2434C53.0206 47.6809 53.2708 48.0339 53.6089 48.3024C53.947 48.5709 54.3779 48.7051 54.9015 48.7051ZM60.8231 49.6L58.4964 41.9636H59.7294L61.3799 47.8102H61.4595L63.0902 41.9636H64.343L65.9538 47.7903H66.0333L67.6839 41.9636H68.9169L66.5902 49.6H65.4368L63.7663 43.7335H63.647L61.9765 49.6H60.8231ZM70.8413 45.0062V49.6H69.668V41.9636H70.8015V43.1568H70.901C71.0799 42.769 71.3517 42.4575 71.7163 42.2221C72.0809 41.9835 72.5515 41.8642 73.1282 41.8642C73.6453 41.8642 74.0977 41.9702 74.4855 42.1824C74.8733 42.3912 75.1749 42.7094 75.3903 43.1369C75.6057 43.5611 75.7135 44.0981 75.7135 44.7477V49.6H74.5402V44.8272C74.5402 44.2273 74.3844 43.76 74.0728 43.4253C73.7613 43.0872 73.3337 42.9182 72.7902 42.9182C72.4156 42.9182 72.0809 42.9994 71.7859 43.1618C71.4942 43.3242 71.2639 43.5611 71.0948 43.8727C70.9258 44.1843 70.8413 44.5621 70.8413 45.0062Z"
+                fill="white"
+              />
+              <path d="M38.25 5.84998V11.7" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              <rect x="29.25" y="0.75" width="18" height="29.7" rx="9" stroke="white" stroke-width="1.5" />
+            </g>
+          </svg>
+        </a>
+        <div class="jm-flex jm-flex-col jm-justify-center jm-items-center jm-w-full !jm-h-[100vh] jm-py-[60px] lg:jm-py-[80px]">
+          <img class="jm-w-[290px] lg:jm-w-[500px] xl:jm-w-[650px] jm-mb-[15px] lg:jm-mb-[20px] xl:jm-mb-[30px]" src="/assets/images/main_logo_v2.png" alt="메인로고" data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="1800" />
+          <p class="jm-typing jm-text-[#fff] jm-font-[700] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[22px] lg:jm-text-[29px] jm-mb-[20px] lg:jm-mb-[30px] !jm-text-center jm-max-w-[80%]" data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="2000">&nbsp;</p>
+          <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[25px] lg:jm-text-[38px] jm-mb-[20px] lg:jm-mb-[25px]" data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="1800">Make Your <span class="jm-text-[#911789fc] jm-font-[700]" style="text-shadow: 1px 1px 2px white">Creative</span></p>
+          <div class="jm-flex jm-items-center">
+            <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2000">&nbsp;Track ,</p>
+            <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2200">&nbsp;Loop ,</p>
+            <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2400">&nbsp;Presets ,</p>
+            <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2600">&nbsp;Beat ,</p>
+            <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2800">&nbsp;etc</p>
           </div>
-          <div class="chzone-landing-bg jm-flex jm-flex-col jm-justify-center jm-items-center jm-w-full jm-h-auto jm-pt-[30px] jm-pb-[130px] lg:jm-py-[100px] lg:jm-pb-[130px] xl:jm-pb-[70px]">
-            <div class="jm-flex jm-justify-center jm-items-center jm-text-[#000000] jm-py-[3px] lg:jm-py-[5px] jm-px-[15px] lg:jm-px-[34px] jm-mb-[8px] lg:jm-mb-[27px] jm-bg-[#CEAB8D] jm-rounded-[50px] jm-relative">
-              <span class="jm-text-[#000] jm-text-[12px] lg:jm-text-[20px] jm-font-[900] jm-tracking-[-0.4px]">01</span>
-            </div>
-            <p class="jm-text-[#fff] jm-text-[17px] lg:jm-text-[50px] jm-font-[700] jm-mb-[10px] lg:jm-mb-[30px]" style="font-family: kim-jung-chul-myungjo, sans-serif">재테크의 모든 정보를 한눈에 !</p>
-            <p class="jm-w-[82%] jm-text-[#fff]/80 jm-text-[14px] lg:jm-text-[26px] jm-font-[500] jm-tracking-[-1.4px] jm-leading-[20px] lg:jm-leading-[38px] jm-text-center jm-mb-[20px] lg:jm-mb-[60px]">
-              매일매일 실시간으로 업데이트 되는 증권과 재무의 다양하고 <br class="jm-block lg:!jm-hidden" />흥미로운 콘텐츠들 !<br />
-              프리미엄과 신뢰도를 한번에 !
+
+          <div class="jm-typing-txt">
+            <ul>
+              <li>장르 & 분야별 다양한 샘플들이 당신의 창작 과정을 돕습니다.</li>
+              <li>창의적인 결과물을 제작하고 창작 과정을 공유하세요.</li>
+            </ul>
+            <style>
+              .jm-typing-txt {
+                display: none;
+              }
+              .jm-typeing-txt ul {
+                list-style: none;
+              }
+              .jm-typing {
+                display: inline-block;
+                animation-name: cursor;
+                animation-duration: 0.3s;
+                animation-iteration-count: infinite;
+              }
+              @keyframes cursor {
+                0% {
+                  border-right: 1px solid #fff;
+                }
+                50% {
+                  border-right: 1px solid #000;
+                }
+                100% {
+                  border-right: 1px solid #fff;
+                }
+              }
+            </style>
+          </div>
+        </div>
+        <script>
+          var typingBool = false;
+          var typingIdx = 0;
+          var liIndex = 0;
+          var liLength = $(".jm-typing-txt>ul>li").length;
+
+          var typingTxt = $(".jm-typing-txt>ul>li").eq(liIndex).text();
+          typingTxt = typingTxt.split("");
+          if (typingBool == false) {
+            typingBool = true;
+            var tyInt = setInterval(typing, 80);
+          }
+
+          function typing() {
+            if (typingIdx < typingTxt.length) {
+              $(".jm-typing").append(typingTxt[typingIdx]);
+              typingIdx++;
+            } else {
+              if (liIndex >= liLength - 1) {
+                liIndex = 0;
+              } else {
+                liIndex++;
+              }
+
+              typingIdx = 0;
+              typingBool = false;
+              typingTxt = $(".jm-typing-txt>ul>li").eq(liIndex).text();
+
+              clearInterval(tyInt);
+              setTimeout(function () {
+                $(".jm-typing").html("&nbsp;");
+                tyInt = setInterval(typing, 80);
+              }, 1200);
+            }
+          }
+        </script>
+      </div>
+      <div id="about" class="jm-w-full jm-h-full jm-min-h-[100vh] jm-py-[60px] lg:jm-py-[100px] jm-flex jm-justify-center jm-overflow-hidden jm-items-center" style="scroll-behavior: smooth">
+        <div class="jm-flex jm-flex-col lg:jm-flex-row jm-items-center jm-justify-center jm-gap-x-[50px] jm-gap-y-[30px] jm-w-full jm-h-full md:jm-max-w-[820px] lg:jm-max-w-[1360px] 2xl:jm-max-w-[1500px] jm-mx-auto jm-px-[15px]">
+          <div class="jm-w-full jm-aspect-[4/3] jm-bg-center jm-bg-cover jm-bg-[#dfdfdf] jm-rounded-[8px] jm-shadow-xl" data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" style="background-image: url(./assets/images/about.jpg)"></div>
+          <div class="jm-w-full jm-flex jm-flex-col" data-aos="fade-left" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom">
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[25px] lg:jm-text-[40px] jm-mb-[10px] lg:jm-mb-[40px]"><span class="jm-text-[#D59F13] jm-font-[700]" style="text-shadow: 1px 1px 1px #ffffffbe">About</span> SAMPLERIX</p>
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[18px] lg:jm-text-[25px] jm-mb-[10px] lg:jm-mb-[15px]">Hip-Hop , R&B , Soul , Jazz , Rock , Pop , K-Pop 등 다양한 분야의 아티스트들이 <span class="jm-text-[#911789fc] jm-font-[700]" style="text-shadow: 1px 1px 1px #ffffffbe">SAMPLERIX</span>에서 소통합니다.</p>
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[18px] lg:jm-text-[25px] jm-mb-[10px] lg:jm-mb-[15px]">Seller 와 Buyer 가 되어서 서로의 아이디어를 공유하고 다양한 샘플파일을 거래하세요.</p>
+          </div>
+        </div>
+      </div>
+      <div id="seller" class="jm-w-full jm-h-full jm-min-h-[100vh] jm-py-[60px] lg:jm-py-[100px] jm-flex jm-justify-center jm-overflow-hidden jm-items-center" style="scroll-behavior: smooth">
+        <div class="jm-flex jm-flex-col lg:jm-flex-row-reverse jm-items-center jm-justify-center jm-gap-x-[50px] jm-gap-y-[30px] jm-w-full jm-h-full md:jm-max-w-[820px] lg:jm-max-w-[1360px] 2xl:jm-max-w-[1500px] jm-mx-auto jm-px-[15px]">
+          <div class="jm-w-full jm-aspect-[4/3] jm-bg-center jm-bg-cover jm-bg-[#dfdfdf] jm-rounded-[8px] jm-shadow-xl" data-aos="fade-left" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" style="background-image: url(./assets/images/buyer.jpg)"></div>
+          <div class="jm-w-full jm-flex jm-flex-col" data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom">
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[25px] lg:jm-text-[40px] jm-mb-[10px] lg:jm-mb-[40px]"><span class="jm-text-[#D59F13] jm-font-[700]" style="text-shadow: 1px 1px 1px #ffffffbe">Sell</span> your Creative</p>
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[18px] lg:jm-text-[25px] jm-mb-[10px] lg:jm-mb-[15px]">
+              <span class="jm-text-[#911789fc] jm-font-[700]" style="text-shadow: 1px 1px 1px #ffffffbe">SAMPLERIX</span>에서는 Beat Maker , Guitarist , Bassist , Drummer , Vocal 등<br />
+              다양한 분야의 아티스트들이 자신의 샘플 파일을 업로드하여 아이디어를 수익화할 수 있습니다.
             </p>
-            <div class="jm-w-[70%] jm-max-w-[424px] jm-h-auto jm-relative">
-              <img data-aos="fade-down" data-aos-duration="1500" class="jm-w-full aos-init aos-animate" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-1.png" alt="제테크의 모든 정보를 한눈에! 이미지" />
-              <div class="jm-absolute jm-right-[50%] jm-bottom-[-90px] lg:jm-bottom-[-110px] jm-translate-x-[50%] xl:jm-translate-x-[0%] xl:!jm-right-[-350px] xl:!jm-bottom-[0px] jm-text-[#fff] jm-w-full xl:!jm-max-w-[390px]">
-                <div class="jm-w-[10px] xl:jm-w-[15px] jm-aspect-square jm-bg-[#D59F13] jm-rounded-full jm-mb-[5px] jm-mx-auto xl:!jm-mx-[0px]">
-                  <div class="jm-animate-ping jm-w-[10px] xl:jm-w-[15px] jm-aspect-square jm-bg-[#D59F13] jm-rounded-full jm-mb-[5px]"></div>
-                </div>
-                <p class="jm-text-[#fff]/70 jm-text-[13px] xl:jm-text-[22px] jm-leading-[19px] xl:jm-leading-[32px] jm-tracking-[-1.4px] jm-text-center xl:jm-text-left">
-                  재테크에 대한 모든 정보를 한 곳에 !<br />
-                  실시간으로 업데이트되는 증권 / 재무 컨텐츠를<br class="jm-hiden lg:!jm-block" />
-                  한 곳에서 확인해 보세요 !
-                </p>
-              </div>
-            </div>
           </div>
-          <div class="jm-flex jm-flex-col jm-items-center jm-justify-center jm-w-full jm-py-[30px] lg:jm-py-[70px] jm-bg-[#181818]">
-            <div class="jm-flex jm-justify-center jm-items-center jm-text-[#000000] jm-py-[3px] lg:jm-py-[5px] jm-px-[15px] lg:jm-px-[34px] jm-mb-[8px] lg:jm-mb-[27px] jm-bg-[#CEAB8D] jm-rounded-[50px] jm-relative">
-              <span class="jm-text-[#000] jm-text-[12px] lg:jm-text-[20px] jm-font-[900] jm-tracking-[-0.4px]">02</span>
-            </div>
-            <p class="jm-text-[#fff] jm-text-[17px] lg:jm-text-[50px] jm-font-[700] jm-mb-[20px] lg:jm-mb-[60px]" style="font-family: kim-jung-chul-myungjo, sans-serif">증권과 재무로 구성된 알찬 내용 !</p>
-            <div class="jm-w-full jm-max-w-[1140px] jm-px-[15px] jm-mx-auto jm-flex jm-flex-col lg:jm-flex-row jm-items-center lg:jm-items-end jm-gap-x-[30px] jm-gap-y-[10px] jm-mb-[30px] lg:jm-mb-[70px]">
-              <div class="jm-grid jm-grid-cols-3 lg:jm-max-w-[695px] lg:jm-min-w-[695px]">
-                <img data-aos="fade-left" data-aos-duration="1300" data-aos-anchor-placement="center-bottom" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-2.png" alt="증권과 재무로 구성된 알찬 내용!" />
-                <img data-aos="fade-left" data-aos-duration="1800" data-aos-anchor-placement="center-bottom" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-3.png" alt="증권과 재무로 구성된 알찬 내용!" />
-                <img data-aos="fade-left" data-aos-duration="2200" data-aos-anchor-placement="center-bottom" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-4.png" alt="증권과 재무로 구성된 알찬 내용!" />
-              </div>
-              <div class="jm-w-full aos-init" data-aos="fade-left" data-aos-duration="2200" data-aos-anchor-placement="top-bottom">
-                <div class="jm-w-full jm-flex jm-items-center jm-justify-center lg:jm-justify-start jm-gap-x-[8px] jm-pb-[10px] jm-mb-[10px] lg:jm-pb-[15px] lg:jm-mb-[15px] jm-border-b jm-border-[#fff]/30">
-                  <div class="jm-flex jm-items-center jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full">
-                    <div class="jm-animate-ping jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full"></div>
-                  </div>
-                  <p class="jm-text-[#fff] jm-text-[15px] lg:jm-text-[24px] jm-font-[500] jm-tracking-[-1.4px]">증권</p>
-                </div>
-                <p class="jm-text-[#fff]/70 jm-text-[13px] lg:jm-text-[22px] jm-leading-[19px] lg:jm-leading-[32px] jm-tracking-[-1.4px] jm-text-center lg:jm-text-left">
-                  실시간 뉴스와 유용한 재테크 정보, 그리고<br />
-                  모든 전문가의 투자 정보까지 확인 !
-                </p>
-              </div>
-            </div>
-            <div class="jm-w-full jm-max-w-[1140px] jm-px-[15px] jm-mx-auto jm-flex jm-flex-col-reverse lg:jm-flex-row jm-items-center lg:jm-items-end jm-gap-y-[10px] jm-gap-x-[30px]">
-              <div class="jm-w-full aos-init" data-aos="fade-right" data-aos-duration="1900" data-aos-anchor-placement="top-bottom">
-                <div class="jm-w-full jm-flex jm-items-center jm-justify-center lg:jm-justify-end jm-gap-x-[8px] jm-pb-[10px] jm-mb-[10px] lg:jm-pb-[15px] lg:jm-mb-[15px] jm-border-b jm-border-[#fff]/30">
-                  <div class="jm-flex jm-items-center jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full">
-                    <div class="jm-animate-ping jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full"></div>
-                  </div>
-                  <p class="jm-text-[#fff] jm-text-[15px] lg:jm-text-[24px] jm-font-[500] jm-tracking-[-1.4px]">재무</p>
-                </div>
-                <p class="jm-text-[#fff]/70 jm-text-[13px] lg:jm-text-[22px] jm-leading-[19px] lg:jm-leading-[32px] jm-tracking-[-1.4px] jm-text-center lg:jm-text-right">
-                  재무, 세무, 부동산 각 분야별로<br />
-                  전문가와 유용한 컨텐츠가 매일매일 업데이트!
-                </p>
-              </div>
-              <div class="jm-grid jm-grid-cols-3 lg:jm-max-w-[695px] lg:jm-min-w-[695px]">
-                <img data-aos="fade-right" data-aos-duration="1300" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-5.png" data-aos-anchor-placement="center-bottom" alt="증권과 재무로 구성된 알찬 내용!" />
-                <img data-aos="fade-right" data-aos-duration="1800" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-6.png" data-aos-anchor-placement="center-bottom" alt="증권과 재무로 구성된 알찬 내용!" />
-                <img data-aos="fade-right" data-aos-duration="2000" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-7.png" data-aos-anchor-placement="center-bottom" alt="증권과 재무로 구성된 알찬 내용!" />
-              </div>
-            </div>
-            <div class="jm-w-full jm-px-[15px]">
-              <div class="jm-flex jm-flex-col jm-items-center jm-w-full jm-max-w-[1140px] jm-mx-auto jm-mt-[30px] jm-pt-[30px] lg:jm-mt-[100px] lg:jm-pt-[70px] jm-border-t jm-border-[#CEAB8D]">
-                <div class="jm-flex jm-justify-center jm-items-center jm-text-[#000000] jm-py-[3px] lg:jm-py-[5px] jm-px-[15px] lg:jm-px-[34px] jm-mb-[8px] lg:jm-mb-[27px] jm-bg-[#CEAB8D] jm-rounded-[50px] jm-relative">
-                  <span class="jm-text-[#000] jm-text-[12px] lg:jm-text-[20px] jm-font-[900] jm-tracking-[-0.4px]">03</span>
-                </div>
-                <p class="jm-text-[#fff] jm-text-[17px] lg:jm-text-[50px] jm-font-[700] jm-mb-[20px] lg:jm-mb-[60px]" style="font-family: kim-jung-chul-myungjo, sans-serif">원하는 전문가를 선택해서 보자 !</p>
-                <img data-aos="zoom-in-up" data-aos-duration="1600" class="pcpcpc jm-w-full jm-max-w-[776px] jm-hidden lg:!jm-block aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-8.png" data-aos-anchor-placement="center-bottom" alt="원하는 전문가를 선택해서 보자 !" />
-                <img data-aos="zoom-in-up" data-aos-duration="1600" class="mmmmm jm-w-full jm-max-w-[776px] jm-block lg:jm-hidden aos-init aos-animate" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-8-m.png" data-aos-anchor-placement="center-bottom" alt="원하는 전문가를 선택해서 보자 !" />
-              </div>
-            </div>
+        </div>
+      </div>
+      <div id="buyer" class="jm-w-full jm-h-full jm-min-h-[100vh] jm-py-[60px] lg:jm-py-[100px] jm-flex jm-justify-center jm-overflow-hidden jm-items-center" style="scroll-behavior: smooth">
+        <div class="jm-flex jm-flex-col lg:jm-flex-row jm-items-center jm-justify-center jm-gap-x-[50px] jm-gap-y-[30px] jm-w-full jm-h-full md:jm-max-w-[820px] lg:jm-max-w-[1360px] 2xl:jm-max-w-[1500px] jm-mx-auto jm-px-[15px]">
+          <div class="jm-w-full jm-aspect-[4/3] jm-bg-center jm-bg-cover jm-bg-[#dfdfdf] jm-rounded-[8px] jm-shadow-xl" data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom" style="background-image: url(./assets/images/seller.jpg)"></div>
+          <div class="jm-w-full jm-flex jm-flex-col" data-aos="fade-left" data-aos-easing="ease-in-out-back" data-aos-duration="1100" data-aos-anchor-placement="top-bottom">
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[25px] lg:jm-text-[40px] jm-mb-[10px] lg:jm-mb-[40px]"><span class="jm-text-[#911789fc] jm-font-[700]" style="text-shadow: 1px 1px 1px #ffffffbe">Get</span> idea from SAMPLERIX</p>
+            <p class="jm-text-[#D59F13] jm-font-[700] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[18px] lg:jm-text-[25px] jm-mb-[10px] lg:jm-mb-[15px]" style="text-shadow: 1px 1px 1px #ffffffbe">&quot;모방은 창조의 어머니&quot;</p>
+            <p class="jm-text-[#fff] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[150%] jm-text-[18px] lg:jm-text-[25px] jm-mb-[10px] lg:jm-mb-[15px]">
+              다양한 장르와 분야의 아티스트들의 샘플 트랙을 경험해보세요.<br />
+              새로운 아이디어를 구매하고, Buyer에서 시작한 당신이 Seller가 될 수 있습니다.
+            </p>
           </div>
-          <div class="jm-flex jm-flex-col jm-items-center jm-w-full jm-max-w-[1140px] jm-px-[15px] jm-mx-auto jm-pt-[30px] lg:jm-pt-[70px]">
-            <div class="jm-flex jm-justify-center jm-items-center jm-text-[#000000] jm-py-[3px] lg:jm-py-[5px] jm-px-[15px] lg:jm-px-[34px] jm-mb-[8px] lg:jm-mb-[27px] jm-bg-[#CEAB8D] jm-rounded-[50px] jm-relative">
-              <span class="jm-text-[#000] jm-text-[12px] lg:jm-text-[20px] jm-font-[900] jm-tracking-[-0.4px]">04</span>
+        </div>
+      </div>
+      <!-- 푸터 -->
+      <div class="jm-bg-[#222]">
+        <div class="jm-container jm-mt-[0px] jm-py-[30px] lg:jm-py-[50px] jm-mx-auto jm-w-full">
+          <div class="jm-relative jm-h-full">
+            <div class="jm-flex jm-flex-col lg:jm-flex-row jm-justify-between jm-items-center jm-gap-y-[15px] jm-mb-[15px] lg:jm-mb-[20px] lg:jm-pt-[9px]">
+              <!-- <div class="jm-flex jm-item-center jm-gap-x-[5px] lg:jm-gap-x-[8px] jm-max-w-[350px]">
+                <a href="https://play.google.com/store/apps/details?id=kr.co.samplix&amp;hl=ko" target=" " class="jm-w-full">
+                  <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/google-big.png" alt="구글 플레이스토어 다운로드 링크" />
+                </a>
+                <a href="https://apps.apple.com/kr/app/%ED%81%AC%EC%A1%B4-%EC%9E%AC%ED%85%8C%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83/id1660501630" target=" " class="jm-w-full">
+                  <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/apple-big.png" alt="애플 앱스토어 다운로드 링크" />
+                </a>
+              </div> -->
+              <button type="button" onclick="location.href='/finance'" class="jm-flex jm-flex-row jm-items-center jm-justify-center jm-gap-x-[8px] jm-rounded-[100px] jm-bg-[#911789f4] jm-py-[9px] lg:jm-py-[11px] jm-px-[24px] jm-whitespace-nowrap" style="border: 1px solid rgba(255, 255, 255, 0.6)">
+                <span class="jm-whitespace-nowrap jm-text-[#fff] jm-text-[18px] lg:jm-text-[20px] jm-font-[700] jm-tracking-[-0.6px] jm-leading-[32px]">샘플릭스 바로가기</span>
+                <svg class="jm-mt-[2px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.2605 19L13.053 17.7775L17.7707 12.8877H3V11.1414H17.7707L13.025 6.22245L14.2324 5L21 12.0146L14.2605 19Z" fill="#D59F13"></path>
+                </svg>
+              </button>
             </div>
-            <p class="jm-text-[#fff] jm-text-[17px] lg:jm-text-[50px] jm-font-[700] jm-mb-[20px] lg:jm-mb-[60px]" style="font-family: kim-jung-chul-myungjo, sans-serif">SBS Biz 프로그램의 다시보기 무제한 !</p>
-            <div class="jm-w-full jm-flex jm-flex-row jm-items-end jm-gap-x-[10px] lg:jm-gap-x-[70px]">
-              <div class="jm-w-full jm-max-w-[50%] aos-init jm-mb-[20px] lg:jm-mb-[70px]" data-aos="fade-right" data-aos-duration="1400" data-aos-anchor-placement="top-bottom">
-                <div class="jm-w-full jm-flex jm-items-center jm-justify-start jm-gap-x-[8px] jm-pb-[10px] jm-mb-[10px] lg:jm-pb-[15px] lg:jm-mb-[15px] jm-border-b jm-border-[#fff]/30">
-                  <div class="jm-flex jm-items-center jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full">
-                    <div class="jm-animate-ping jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full"></div>
-                  </div>
-                  <p class="jm-text-[#fff] jm-text-[15px] lg:jm-text-[24px] jm-font-[500] jm-tracking-[-1.4px]">방송다시보기</p>
-                </div>
-                <p class="jm-text-[#fff]/70 jm-text-[13px] lg:jm-text-[22px] jm-leading-[19px] lg:jm-leading-[32px] jm-tracking-[-1.4px] jm-text-left" style="word-break: keep-all">
-                  신뢰성있는 SBS Biz의 다양하고 흥미로운 증권과<br />
-                  재무 프로그램을 크존 앱 하나로 간단 편리하게 !
-                </p>
-              </div>
-              <div class="jm-grid jm-grid-cols-1 jm-w-[50%] lg:jm-max-w-[614px] lg:jm-min-w-[614px]">
-                <img data-aos="fade-right" data-aos-duration="1300" class="jm-w-full aos-init" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-9.png" data-aos-anchor-placement="top-bottom" alt="SBS Biz 프로그램의 다시보기 무제한 !" />
-              </div>
-            </div>
-          </div>
-          <div class="jm-w-full jm-bg-[#181818] jm-pt-[30px] lg:jm-pt-[70px]">
-            <div class="jm-flex jm-flex-col jm-items-center jm-w-full jm-max-w-[1140px] jm-px-[15px] jm-mx-auto">
-              <div class="jm-flex jm-justify-center jm-items-center jm-text-[#000000] jm-py-[3px] lg:jm-py-[5px] jm-px-[15px] lg:jm-px-[34px] jm-mb-[8px] lg:jm-mb-[27px] jm-bg-[#CEAB8D] jm-rounded-[50px] jm-relative">
-                <span class="jm-text-[#000] jm-text-[12px] lg:jm-text-[20px] jm-font-[900] jm-tracking-[-0.4px]">05</span>
-              </div>
-              <p class="jm-text-[#fff] jm-text-[17px] lg:jm-text-[50px] jm-font-[700] jm-mb-[20px] lg:jm-mb-[60px]" style="font-family: kim-jung-chul-myungjo, sans-serif">재테크에 대한 전문적인 채팅상담 !</p>
-            </div>
-            <div data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" class="jm-w-full jm-max-w-[1140px] jm-px-[15px] jm-mx-auto jm-flex jm-flex-col lg:jm-flex-row jm-items-center lg:jm-items-end jm-gap-y-[15px] jm-gap-x-[30px] jm-pb-[50px] lg:jm-pb-[70px] aos-init">
-              <div class="jm-grid jm-grid-cols-1 jm-w-[80%] lg:jm-max-w-[595px] lg:jm-min-w-[595px]">
-                <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/intro-img-10.png" alt="재테크에 대한 전문적인 채팅상담 !" />
-              </div>
+            <div>
               <div class="jm-w-full">
-                <div class="jm-w-full jm-flex jm-items-center jm-justify-center lg:jm-justify-start jm-gap-x-[8px] jm-pb-[10px] jm-mb-[10px] lg:jm-pb-[15px] lg:jm-mb-[15px] jm-border-b jm-border-[#fff]/30">
-                  <div class="jm-flex jm-items-center jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full">
-                    <div class="jm-animate-ping jm-w-[10px] lg:jm-w-[15px] !jm-aspect-square jm-bg-[#D59F13] jm-rounded-full"></div>
-                  </div>
-                  <p class="jm-text-[#fff] jm-text-[15px] lg:jm-text-[24px] jm-font-[500] jm-tracking-[-1.4px]">실시간 세무, 부동산, 재무 상담</p>
-                </div>
-                <p class="jm-text-[#fff]/70 jm-text-[13px] lg:jm-text-[20px] jm-leading-[19px] lg:jm-leading-[32px] jm-tracking-[-1.4px] jm-text-center lg:jm-text-left">
-                  세무, 부동산 등의 각 재무 분야의 최고 전문가들과<br />
-                  자유로운 실시간 채팅 상담 !
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="jm-flex jm-flex-col jm-items-center jm-w-full jm-bg-[#181818]">
-            <div class="jm-w-full jm-h-[1px] jm-bg-[#fff]/30"></div>
-            <button type="button" onclick="location.href='/finance'" class="jm-flex jm-flex-row jm-items-center jm-justify-center jm-gap-x-[8px] lg:jm-gap-x-[12px] jm-rounded-[100px] jm-bg-[#CEAB8D] jm-py-[10px] lg:!jm-py-[18px] jm-px-[17px] jm-whitespace-nowrap jm-font-[700] lg:jm-min-w-[360px] jm-my-[30px] lg:jm-my-[70px]">
-              <span class="jm-whitespace-nowrap jm-text-[#1F1F1F] jm-text-[15px] lg:jm-text-[24px] jm-font-[700] jm-tracking-[-0.6px] jm-leading-[32px]">크존 바로가기</span>
-              <svg class="jm-w-[15px] lg:jm-w-[24px] jm-mt-[2px]" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.6997 16.9318L13.2663 15.5318L18.8663 9.93177H1.33301V7.93177H18.8663L13.233 2.29844L14.6663 0.898438L22.6997 8.93177L14.6997 16.9318Z" fill="#1F1F1F" stroke="#1F1F1F"></path>
-              </svg>
-            </button>
-          </div>
-          <!-- 푸터 -->
-          <div class="jm-bg-[#222]">
-            <div class="jm-container jm-mt-[0px] jm-py-[30px] lg:jm-py-[50px] jm-mx-auto jm-w-full">
-              <div class="jm-relative jm-h-full">
-                <div class="jm-flex jm-flex-col lg:jm-flex-row jm-justify-between jm-items-center jm-gap-y-[15px] jm-mb-[15px] lg:jm-mb-[20px] lg:jm-pt-[9px]">
-                  <div class="jm-flex jm-item-center jm-gap-x-[5px] lg:jm-gap-x-[8px] jm-max-w-[350px]">
-                    <a href="https://play.google.com/store/apps/details?id=kr.co.chzone&amp;hl=ko" target=" " class="jm-w-full">
-                      <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/google-big.png" alt="구글 플레이스토어 다운로드 링크" />
-                    </a>
-                    <a href="https://apps.apple.com/kr/app/%ED%81%AC%EC%A1%B4-%EC%9E%AC%ED%85%8C%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83/id1660501630" target=" " class="jm-w-full">
-                      <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/ChzoneLandingPageHtmlSkin/assets/img/apple-big.png" alt="애플 앱스토어 다운로드 링크" />
-                    </a>
-                  </div>
-                  <button type="button" onclick="location.href='/finance'" class="jm-flex jm-flex-row jm-items-center jm-justify-center jm-gap-x-[8px] jm-rounded-[100px] jm-bg-[#000] jm-py-[9px] lg:jm-py-[11px] jm-px-[24px] jm-whitespace-nowrap" style="border: 1px solid rgba(255, 255, 255, 0.6)">
-                    <span class="jm-whitespace-nowrap jm-text-[#fff] jm-text-[18px] lg:jm-text-[20px] jm-font-[500] jm-tracking-[-0.6px] jm-leading-[32px]">크존 바로가기</span>
-                    <svg class="jm-mt-[2px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14.2605 19L13.053 17.7775L17.7707 12.8877H3V11.1414H17.7707L13.025 6.22245L14.2324 5L21 12.0146L14.2605 19Z" fill="#D59F13"></path>
-                    </svg>
-                  </button>
-                </div>
-                <div>
-                  <div class="jm-w-full">
-                    <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-0">
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">(주)SBS미디어넷</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">대표이사 : 김계홍</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">주소 : 서울특별시 마포구 상암산로 82 SBS프리즘타워 10층</li>
-                      <li class="jm-hidden lg:!jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">|</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">(주)다인리더스</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">대표이사 : 임무호</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">주소 : 서울특별시 성동구 성수일로8길</li>
-                    </ul>
-                    <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-[4px]">
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">5 A동 2006호</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">개인정보 관리 책임자 : 김대훈</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">대표전화 : 02-6951-0157</li>
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">사업자등록번호 : 105-87-32905</li>
-                    </ul>
-                    <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-[4px]">
-                      <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">Copyright©SBS Medianet &amp; Dain Leaders 2023 All right reserved.</li>
-                    </ul>
-                  </div>
-                </div>
+                <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-0">
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">(주)샘플릭스</li>
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">대표이사 : 000</li>
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">주소 : 경기도 파주시 금정2길 17</li>
+                  <li class="jm-hidden lg:!jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">|</li>
+                </ul>
+                <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-[4px]">
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">개인정보 관리 책임자 : 000</li>
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">카카오톡 문의 : handrix3650</li>
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">사업자등록번호 : 424-86-02265</li>
+                </ul>
+                <ul class="jm-flex jm-flex-wrap jm-flex-row jm-gap-x-[10px] jm-mb-[4px]">
+                  <li class="jm-flex jm-text-[15px] jm-leading-[25px] jm-tracking-[-0.5px] jm-text-[#6C6C6C]">Copyright© SAMPLERIX 2023 All right reserved.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!-- 푸터 -->
       </div>
-    
+    </div>
+    <!-- 푸터 -->
+
     <script>
       AOS.init();
     </script>
