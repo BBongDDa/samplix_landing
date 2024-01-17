@@ -999,6 +999,10 @@ input[type="number"] {
   z-index: 2 !important;
 }
 
+.jm-z-\[20\] {
+  z-index: 20;
+}
+
 .jm-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1211,6 +1215,10 @@ input[type="number"] {
   height: 51%;
 }
 
+.\!jm-h-auto {
+  height: auto !important;
+}
+
 .jm-min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1321,6 +1329,22 @@ input[type="number"] {
 
 .jm-w-\[51\%\] {
   width: 51%;
+}
+
+.jm-w-\[30px\] {
+  width: 30px;
+}
+
+.\!jm-w-\[70\%\] {
+  width: 70% !important;
+}
+
+.\!jm-w-\[55\%\] {
+  width: 55% !important;
+}
+
+.\!jm-w-\[56\%\] {
+  width: 56% !important;
 }
 
 .jm-min-w-full {
@@ -2427,6 +2451,14 @@ input[type="number"] {
   color: #911789f4 !important;
 }
 
+.jm-group:hover .group-hover\:jm-underline {
+  text-decoration-line: underline;
+}
+
+.jm-group:hover .group-hover\:\!jm-opacity-80 {
+  opacity: 0.8 !important;
+}
+
 @media (min-width: 768px) {
   .md\:jm-mr-\[16px\] {
     margin-right: 16px;
@@ -2581,6 +2613,14 @@ input[type="number"] {
 
   .lg\:jm-w-\[200px\] {
     width: 200px;
+  }
+
+  .lg\:jm-w-\[40px\] {
+    width: 40px;
+  }
+
+  .lg\:jm-w-\[65px\] {
+    width: 65px;
   }
 
   .lg\:jm-min-w-\[695px\] {
@@ -2835,6 +2875,10 @@ input[type="number"] {
 
   .lg\:jm-text-\[43px\] {
     font-size: 43px;
+  }
+
+  .lg\:jm-text-\[19px\] {
+    font-size: 19px;
   }
 
   .lg\:jm-leading-\[38px\] {
