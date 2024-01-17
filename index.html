@@ -16,6 +16,16 @@
   <body>
     <!-- 컨텐츠 영역  -->
     <style>
+      body::after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: -3;
+
+        /* load images */
+        content: url("/assets/video/main-bg.mp4") url("/assets/images/about.jpg") url("/assets/images/buyer.jpg") url("/assets/images/seller.jpg") url(/assets/video/main-bg.mp4) url(/assets/images/about.jpg) url(/assets/images/buyer.jpg) url(/assets/images/seller.jpg);
+      }
       .gnb__menu:hover .gnb__submenu {
         display: block !important;
       }
