@@ -119,19 +119,25 @@ textarea {
   outline: none;
 }
 
-input[type="text"]:focus,
-textarea:focus,
-input[type="text"]:hover,
-textarea:hover {
-  border: 1px solid #1d1503;
-}
-
 input[type="text"]:read-only,
 textarea:read-only {
   border: 1px solid #d7d7d7;
+  background-color: #dfdfdf;
 }
 button:hover {
   opacity: 0.9;
+}
+
+.jm-a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 blockquote:before,
@@ -204,10 +210,43 @@ a:hover {
 }
 
 .jm-container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+.jm-container {
+  width: 100%;
 }
 
+@media (min-width: 640px) {
+  .jm-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .jm-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jm-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jm-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .jm-container {
+    max-width: 1250px;
+  }
+}
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -307,6 +346,10 @@ input[type="number"] {
   .basic-visual-slide-wrap .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 10px;
     height: 10px;
+  }
+  .jm-container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

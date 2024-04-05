@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" style="width: 100%; height: 100%">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -136,12 +136,6 @@
           </li> -->
 
           <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
-            <a href="#main" class="jm-relative jm-flex jm-justify-center jm-items-center">
-              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">Main</span>
-            </a>
-          </li>
-
-          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
             <a href="#about" class="jm-relative jm-flex jm-justify-center jm-items-center">
               <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">About</span>
             </a>
@@ -156,6 +150,12 @@
           <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
             <a href="#buyer" class="jm-relative jm-flex jm-justify-center jm-items-center">
               <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">Buyer</span>
+            </a>
+          </li>
+
+          <li class="gnb__menu jm-relative jm-flex jm-py-[20px]">
+            <a href="/samplerix/main/" class="jm-relative jm-flex jm-justify-center jm-items-center">
+              <span class="jm-text-[20px] jm-font-[600] jm-tracking-[-0.02em] jm-leading-[26px] jm-text-[#fff] hover:!jm-text-[#911789f4] hover:jm-underline hover:jm-underline-offset-2">시작하기</span>
             </a>
           </li>
         </ul>
@@ -190,8 +190,8 @@
           </li> -->
 
           <li class="">
-            <a onclick="alert('서비스 오픈 준비 중입니다! 👨‍💻')" class="jm-btn-sign jm-flex jm-items-center jm-justify-center jm-rounded-[100px] jm-px-[16px] jm-py-[6px]">
-              <span class="jm-tracking-[-0.02em] jm-text-[12px] jm-font-[600]">Login</span>
+            <a href="/samplerix/sign_up/" class="jm-btn-sign jm-cursor-pointer jm-flex jm-items-center jm-justify-center jm-rounded-[100px] jm-px-[16px] jm-py-[6px]">
+              <span class="jm-tracking-[-0.02em] jm-text-[12px] jm-font-[600]">Sign Up</span>
             </a>
           </li>
         </ul>
@@ -211,7 +211,8 @@
         $(".xf-scroll-change__logo").addClass("jm-hidden");
         $(".xf-scroll-change__logo-white").removeClass("jm-hidden");
         $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
-        $(".jm-btn-sign > span").addClass("jm-text-[#fff]/60");
+        $(".jm-btn-sign > span").addClass("!jm-text-[#fff]/60");
+        $(".jm-btn-sign > span").removeClass("jm-text-[#911789f4]");
       } else {
         $(".jm-white-logo").addClass("!jm-hidden");
         $(".jm-color-logo").removeClass("!jm-hidden");
@@ -226,6 +227,7 @@
         $(".xf-scroll-change__logo-white").addClass("jm-hidden");
         $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
         $(".jm-btn-sign").addClass("!jm-border-[2px] !jm-border-[#D59F13] !jm-bg-[#fff]");
+        $(".jm-btn-sign > span").removeClass("!jm-text-[#fff]/60");
         $(".jm-btn-sign > span").addClass("jm-text-[#911789f4]");
       }
       window.addEventListener("scroll", function (e) {
@@ -244,7 +246,7 @@
           $(".jm-btn-sign").addClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
           $(".jm-btn-sign").removeClass("!jm-border-[2px] !jm-border-[#D59F13] !jm-bg-[#fff]");
           $(".jm-btn-sign > span").removeClass("!jm-text-[#911789f4]");
-          $(".jm-btn-sign > span").addClass("jm-text-[#fff]/60");
+          $(".jm-btn-sign > span").addClass("!jm-text-[#fff]/60");
         } else {
           $(".jm-white-logo").addClass("!jm-hidden");
           $(".jm-color-logo").removeClass("!jm-hidden");
@@ -259,6 +261,7 @@
           $(".jm-btn-sign").removeClass("!jm-border-[#fff] jm-text-center jm-bg-[#fff]/30 jm-border-none hover:jm-bg-[#fff]/60");
           $(".jm-btn-sign").addClass("!jm-border-[2px] !jm-border-[#D59F13]");
           $(".jm-btn-sign").addClass("!jm-border-[2px] !jm-border-[#D59F13] !jm-bg-[#fff]");
+          $(".jm-btn-sign > span").removeClass("!jm-text-[#fff]/60");
           $(".jm-btn-sign > span").addClass("!jm-text-[#911789f4]");
         }
       });
@@ -382,6 +385,11 @@
                 <li class="jm-relative jm-w-full jm-px-[25px]">
                   <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
                     <a href="#buyer" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> Buyer </a>
+                  </div>
+                </li>
+                <li class="jm-relative jm-w-full jm-px-[25px]">
+                  <div class="jm-submenu-btn jm-relative jm-w-full jm-flex jm-justify-between jm-items-center">
+                    <a href="/samplerix/main/" class="jm-font-[500] jm-text-[18px] jm-leading-[26px] jm-tracking-[-0.02em] jm-text-[#383838] jm-py-[10px] jm-w-full jm-whitespace-nowra hover:!jm-text-[#91178968]"> 시작하기 </a>
                   </div>
                 </li>
               </ul>
@@ -738,7 +746,7 @@
     </div>
     <div class="samplix-landing-video-cover jm-fixed jm-w-full jm-h-[100vh] jm-top-0 jm-left-0 jm-z-[-1]" style="background-color: rgba(0, 0, 0, 0.75)"></div>
 
-    <div class="jm-w-[100vw] jm-bg-transparent">
+    <div class="jm-w-full jm-bg-transparent">
       <div id="main" class="jm-w-full jm-h-full jm-min-h-[100vh] jm-relative" style="scroll-behavior: smooth">
         <a href="#about" class="jm-group jm-absolute jm-bottom-[90px] jm-left-[42.7%] lg:jm-left-[48%] jm-animate-bounce">
           <svg xmlns="http://www.w3.org/2000/svg" class="jm-w-[60px] lg:jm-w-[77px]" viewBox="0 0 77 53" fill="none">
@@ -766,6 +774,10 @@
             <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2600">&nbsp;Beat ,</p>
             <p data-aos="fade-up" class="jm-text-[#fff] jm-text-[12px] lg:jm-text-[15px]" data-aos-easing="ease-in-out-back" data-aos-duration="2800">&nbsp;etc</p>
           </div>
+
+          <a href="/samplerix/main/index.html" class="jm-cursor-pointer jm-group jm-w-auto jm-flex jm-items-center jm-justify-center jm-px-[20px] jm-py-[10px] jm-mt-[25px] jm-border-[2px] jm-border-[#D59F13] jm-rounded-[10px] jm-bg-[#fff] hover:jm-bg-[#777]" style="transition: 0.3s">
+            <span class="jm-text-[#911789f4] group-hover:!jm-text-[#fff] jm-font-[600] jm-text-[15px] jm-tracking-[-0.4px] jm-whitespace-nowrap">베타테스트 참여하기</span>
+          </a>
 
           <div class="jm-typing-txt">
             <ul>
