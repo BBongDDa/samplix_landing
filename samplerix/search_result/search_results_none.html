@@ -735,10 +735,7 @@
     <!-- 컨텐츠영역 -->
     <div data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="900" class="jm-min-w-[100vw] jm-min-h-[100vh] jm-bg-[#fff] jm-box-border">
       <div class="jm-flex jm-flex-col jm-justify-center jm-items-center jm-w-full jm-h-auto jm-pt-[85px] lg:jm-pt-[115px] jm-pb-[40px] jm-min-h-[50vh] jm-bg-[#911789f4]">
-        <p class="jm-animate-pulse jm-text-[#fff] jm-text-[16px] jm-font-[700] lg:jm-text-[21px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[25px] jm-text-center">
-          다양한 장르와 분야의 아티스트들이 공유한<br class="!jm-block lg:!jm-hidden" />
-          샘플 트랙을 경험해보세요.
-        </p>
+        <p class="jm-container jm-text-[#fff] jm-text-[16px] jm-font-[700] lg:jm-text-[21px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[25px] jm-text-center"><span id="search_keyword_show"></span> 에 대한 검색결과 입니다.</p>
         <form class="jm-w-full jm-container" action="/samplerix/search_result/result.html">
           <div class="jm-w-[100%] jm-mb-[20px] lg:jm-mb-[30px] lg:jm-max-w-[85%] jm-mx-auto jm-bg-[#fff] jm-border-[1px] lg:jm-border-[1px] lg:!jm-border-b-[2px] jm-border-[#D59F13] focus:jm-border-[#D59F13] hover:jm-border-[#D59F13] jm-rounded-[20px] jm-relative jm-overflow-hidden">
             <input id="search_bar" name="keyword" class="jm-w-full jm-h-full !jm-outline-none hover:!jm-outline-none jm-py-[12px] lg:jm-py-[12px] jm-pl-[15px] lg:jm-pl-[20px] jm-pr-[40px] lg:jm-pr-[60px] jm-box-border jm-text-[12px] md:jm-text-[13px] jm-font-[500] lg:jm-text-[18px] jm-tracking-[-0.6px] jm-text-[#1f1f1f]" type="text" placeholder="장르 & 분야별 다양한 샘플들이 당신을 돕기 위해 모였습니다!" style="appearance: none !important" />
@@ -922,15 +919,52 @@
           </div>
         </div>
       </div>
-      <div class="jm-flex jm-flex-col jm-items-center jm-justify-center w-full jm-py-[60px] jm-bg-[#989797ab]">
-        <p class="jm-text-[#fff] jm-text-[19px] jm-font-[700] lg:jm-text-[29px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[20px] jm-text-center">"모방은 창조의 어머니"</p>
-        <p class="jm-text-[#fff] jm-text-[16px] jm-font-[700] lg:jm-text-[20px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[25px] jm-text-center">
-          새로운 아이디어를 구매하고,<br class="!jm-block lg:!jm-hidden" />
-          Buyer에서 시작한 당신이 Seller가 될 수 있습니다.
-        </p>
-        <div class="jm-grid jm-grid-cols-2 jm-w-full jm-container">
-          <div class="jm-bg-cover jm-w-full jm-aspect-square" style="background-image: url('/assets/images/main-img-1.png')"></div>
-          <div class="jm-bg-cover jm-w-full jm-aspect-square" style="background-image: url('/assets/images/main-img-2.png')"></div>
+      <div class="jm-flex jm-flex-col jm-items-center jm-justify-center w-full jm-py-[60px] jm-bg-[#fff] jm-container">
+        <div class="jm-w-full">
+          <div class="jm-overflow-x-auto">
+            <table class="jm-w-full jm-min-w-[400px] jm-break-all jm-whitespace-nowrap">
+              <colgroup>
+                <col width="12%" />
+                <col width="35%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="10%" />
+                <col width="23%" />
+              </colgroup>
+              <thead class="jm-bg-[#91178927] jm-border-t-[1px] jm-border-t-[#949494] jm-h-[49px]">
+                <tr>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                    <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-center">앨범아트</p>
+                  </th>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                    <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-left">Title</p>
+                  </th>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                    <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-center">Time</p>
+                  </th>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                    <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-center">Key</p>
+                  </th>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                    <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-center">BPM</p>
+                  </th>
+                  <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px] jm-text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="jm-w-[20px] jm-mx-auto" viewBox="0 0 24 24" fill="none">
+                      <path d="M8 6.00067L21 6.00139M8 12.0007L21 12.0015M8 18.0007L21 18.0015M3.5 6H3.51M3.5 12H3.51M3.5 18H3.51M4 6C4 6.27614 3.77614 6.5 3.5 6.5C3.22386 6.5 3 6.27614 3 6C3 5.72386 3.22386 5.5 3.5 5.5C3.77614 5.5 4 5.72386 4 6ZM4 12C4 12.2761 3.77614 12.5 3.5 12.5C3.22386 12.5 3 12.2761 3 12C3 11.7239 3.22386 11.5 3.5 11.5C3.77614 11.5 4 11.7239 4 12ZM4 18C4 18.2761 3.77614 18.5 3.5 18.5C3.22386 18.5 3 18.2761 3 18C3 17.7239 3.22386 17.5 3.5 17.5C3.77614 17.5 4 17.7239 4 18Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </th>
+
+                  <!-- <th class="jm-px-[20px] first:jm-pl-[40px] jm-py-[10px]">
+                            <p class="jm-font-[500] jm-text-[13px] jm-leading-[19px] jm-tracking-[-0.4px] jm-text-[#383838] jm-text-center">수정</p>
+                        </th> -->
+                </tr>
+              </thead>
+              <tbody class="bis-room-table-item jm-bg-[#fff]">
+                <p>검색결과가 없습니다.</p>
+              </tbody>
+            </table>
+          </div>
+          <p class="jm-text-[12px] jm-leading-[16px] jm-tracking-[-0.4px] jm-pt-[12px] jm-text-[#de3618]">* 항목이 많으면 좌우 스크롤이 가능합니다.</p>
         </div>
       </div>
     </div>
@@ -943,6 +977,36 @@
   <script>
     AOS.init({
       once: true, // 한 번만 애니메이션 실행
+    });
+
+    const urlParams = new URL(location.href).searchParams;
+
+    const keyword = urlParams.get("keyword");
+
+    window.onload = function () {
+      document.getElementById("search_bar").value = keyword;
+      document.getElementById("search_keyword_show").innerText = '"' + keyword + '"';
+      if (keyword === drum) {
+        return;
+      } else {
+        location.href = "/samplerix/search_results_none.html";
+      }
+    };
+  </script>
+  <script>
+    var audio1 = new Audio("/assets/music/sample_music-1.m4a");
+    $(".audio_1").on("click", function () {
+      if ($(this).hasClass("music-on") === true) {
+        $(this).find("#audio_cover").empty("svg");
+        audio1.pause();
+        $(".audio_1").toggleClass("music-on");
+      } else {
+        $(".audio_1").toggleClass("music-on");
+        $(this).find("#audio_cover").append("svg");
+        audio1.loop = true;
+        audio1.volume = 1;
+        audio1.play();
+      }
     });
   </script>
 </html>
