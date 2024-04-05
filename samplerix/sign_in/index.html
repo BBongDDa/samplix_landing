@@ -708,6 +708,782 @@
           /* width: 54px; */
         }
       }
+
+      @charset "UTF-8";
+      /* CSS Document */
+      /*reset css*/
+      legend {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      .user em {
+        font-style: normal;
+      }
+
+      .user a {
+        color: #2c8beb;
+        text-decoration: none;
+      }
+
+      .user a:hover {
+        color: #085daa;
+      }
+
+      .user ul,
+      .user h1,
+      .user form,
+      .user fieldset,
+      .user .hr .text-hr,
+      .user .auth-text {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* .xe-container {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.xe-container-fluid {
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.xe-row {
+    margin-right: -4px;
+    margin-left: -4px;
+} */
+
+      .pull-r {
+        float: none;
+      }
+
+      hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 0;
+        border-top: 1px solid #e4e4e4;
+      }
+
+      /* .xe-col-xs-1,
+.xe-col-sm-1,
+.xe-col-md-1,
+.xe-col-lg-1,
+.xe-col-xs-2,
+.xe-col-sm-2,
+.xe-col-md-2,
+.xe-col-lg-2,
+.xe-col-xs-3,
+.xe-col-sm-3,
+.xe-col-md-3,
+.xe-col-lg-3,
+.xe-col-xs-4,
+.xe-col-sm-4,
+.xe-col-md-4,
+.xe-col-lg-4,
+.xe-col-xs-5,
+.xe-col-sm-5,
+.xe-col-md-5,
+.xe-col-lg-5,
+.xe-col-xs-6,
+.xe-col-sm-6,
+.xe-col-md-6,
+.xe-col-lg-6,
+.xe-col-xs-7,
+.xe-col-sm-7,
+.xe-col-md-7,
+.xe-col-lg-7,
+.xe-col-xs-8,
+.xe-col-sm-8,
+.xe-col-md-8,
+.xe-col-lg-8,
+.xe-col-xs-9,
+.xe-col-sm-9,
+.xe-col-md-9,
+.xe-col-lg-9,
+.xe-col-xs-10,
+.xe-col-sm-10,
+.xe-col-md-10,
+.xe-col-lg-10,
+.xe-col-xs-11,
+.xe-col-sm-11,
+.xe-col-md-11,
+.xe-col-lg-11,
+.xe-col-xs-12,
+.xe-col-sm-12,
+.xe-col-md-12,
+.xe-col-lg-12 {
+    padding-right: 4px;
+    padding-left: 4px;
+} */
+
+      .row-title {
+        margin: 5px 0;
+        padding-left: 15px;
+        font-size: 14px;
+      }
+
+      .row-title i {
+        margin-left: 10px;
+      }
+
+      .user {
+        /* max-width: 330px; */
+        max-width: 343px;
+        margin: 0 auto;
+        padding: 32px 5px 24px;
+        color: #2c2e37;
+        font-size: 14px;
+      }
+
+      .user.v2 {
+        max-width: 430px;
+      }
+
+      .user fieldset {
+        border: none;
+      }
+
+      .user .xe-input-text {
+        margin: 0;
+        background-color: transparent;
+      }
+
+      .user .text-message {
+        color: #696e7a;
+      }
+
+      .user .success-input .text-message {
+        color: #2c8beb;
+      }
+
+      .user .text-message.normal {
+        color: #696e7a !important;
+      }
+
+      .user .xe-select-style {
+        display: block;
+      }
+
+      .user .auth-group {
+        position: relative;
+        margin-bottom: 8px;
+      }
+
+      .user.find-password .auth-group {
+        position: relative;
+        margin-bottom: 16px;
+      }
+
+      .user .xe-input-group {
+        margin: 16px 0;
+      }
+
+      .user .xe-input-group label {
+        font-size: 14px;
+        color: #696e7a;
+        line-height: 20px;
+        font-weight: normal;
+      }
+
+      .user h1 {
+        margin-bottom: 24px;
+        font-size: 24px !important;
+        line-height: 32px;
+        font-weight: normal;
+      }
+
+      .user .sub-text {
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #696e7a;
+      }
+
+      .user .g-recaptcha {
+        margin: 16px auto;
+      }
+
+      .user .xe-btn-primary,
+      .user .xe-btn.xe-btn-link {
+        margin-bottom: 16px;
+      }
+
+      .user .xe-btn-blue {
+        color: #fff;
+      }
+
+      .user .auth-text {
+        margin-top: 24px;
+        text-align: center;
+      }
+
+      .user .auto-text {
+        font-size: 14px;
+        color: #696e7a;
+        line-height: 20px;
+      }
+
+      .user .auto-text a {
+        color: #2c8beb;
+      }
+
+      .user .auth-noti {
+        margin-top: 12px;
+        font-size: 13px;
+        color: #8e8e93;
+        line-height: 18px;
+      }
+
+      .user .hr {
+        border-top: 1px solid #e4e4e4;
+      }
+
+      .user .hr .text-hr {
+        margin-top: -12px;
+        text-align: center;
+      }
+
+      .user .hr .text-hr > span {
+        padding: 0 16px;
+        background-color: #fff;
+      }
+
+      .user .auth-sns {
+        position: relative;
+        padding: 23px 0 20px;
+        text-align: center;
+        border-bottom: 1px solid #e4e4e4;
+      }
+
+      .user .auth-sns li {
+        display: inline-block;
+        list-style-type: none;
+        width: 48px;
+      }
+
+      .user .auth-sns li a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #3b5998;
+      }
+
+      .user .auth-sns li.sns-facebook a {
+        /*background-color: #3b5998;*/
+      }
+
+      .user .auth-sns li.sns-twitter a {
+        background-color: #55acee;
+      }
+
+      .user .auth-sns li.sns-kakao a {
+        background-color: #fee500;
+        color: #000000;
+      }
+
+      .user .auth-sns li.sns-naver a {
+        background-color: #23b300;
+      }
+
+      .user .auth-sns li.sns-google a {
+        background-color: #4184f3;
+      }
+
+      .user .auth-sns li.sns-github a {
+        background-color: #444;
+      }
+
+      .user .auth-sns li.sns-line a {
+        background-color: #00c300;
+      }
+
+      .user .auth-sns li.sns-email a {
+        background-color: #fff;
+        color: #8f8f8f !important;
+        border: 1px solid #cfcfcf;
+      }
+
+      .user .auth-sns li.sns-facebook a:hover {
+        /*background-color: #1d315b;*/
+      }
+
+      .user .auth-sns li.sns-twitter a:hover {
+        background-color: #006daa;
+      }
+
+      .user .auth-sns li.sns-naver a:hover {
+        background-color: #1c8d00;
+      }
+
+      .user .auth-sns li.sns-kakao a:hover {
+        background-color: rgb(250, 225, 0);
+      }
+      .user .auth-sns li.sns-google a:hover {
+        background-color: #3a76d6;
+      }
+
+      .user .auth-sns li.sns-github a:hover {
+        background-color: #222;
+      }
+
+      .user .auth-sns li.sns-line a:hover {
+        background-color: #23b300;
+      }
+
+      .user .auth-sns li.sns-email a:hover {
+        background-color: #efefef;
+      }
+
+      .user .auth-sns li a i {
+        color: #fff;
+        font-size: 25px;
+        line-height: 40px;
+      }
+
+      .user .auth-sns li.sns-email a i {
+        color: #8f8f8f;
+      }
+
+      .user hr {
+        margin: 0;
+        border-color: #e4e4e4;
+      }
+
+      .user .auth-sns.v2 {
+        border-bottom: none;
+      }
+
+      .user .auth-sns.v2 ul {
+        /* max-width: 230px; */
+        max-width: none;
+        margin: 8px auto 16px;
+      }
+
+      .user .auth-sns.v2 li {
+        position: relative;
+        /* display: block; */
+        display: inline-block;
+        width: auto;
+      }
+
+      .user .auth-sns.v2 li a {
+        position: relative;
+        display: block;
+        width: 270px;
+        height: 48px;
+        margin-bottom: 8px;
+        padding: 0 14px;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 48px;
+        text-align: left;
+      }
+
+      .user .auth-sns.v2 li a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 55px;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .user .auth-sns.v2 li a i {
+        font-size: 30px;
+        line-height: inherit;
+        vertical-align: middle;
+        margin-right: 28px;
+        transform: translateY(-2px);
+      }
+
+      /* ---- 2019/09/06 회원가입 개편 스타일, 소셜 로그인, 소셜 회원가입 동일하게 스타일 적용 ---- */
+      .user .user__title {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        letter-spacing: -0.24px;
+        text-align: center;
+        color: #172b4d;
+      }
+
+      .user .user__text {
+        margin: 16px 0 0;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        color: #6b778c;
+      }
+
+      .user .auth-user__text-box {
+        margin-top: 32px;
+      }
+
+      .user .auth-user__text-box .auth-user__text {
+        margin: 0;
+      }
+
+      .user .auth-user__text {
+        margin: 32px 0 0;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #6b778c;
+      }
+
+      .user .auth-user__text + .auth-user__text {
+        margin: 12px 0 0;
+      }
+
+      .user .auth-user__text a {
+        margin-left: 4px;
+        color: #345bd9;
+      }
+
+      .user .auth-sns-user {
+        /* max-width: 250px; */
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list {
+        margin: 16px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list > li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list > li + li {
+        margin-top: 8px;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--email {
+        position: relative;
+        margin-top: 48px;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--email:before {
+        content: "or";
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        margin-left: -6px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #6b778c;
+      }
+      .user .auth-sns-user .auth-sns-user-list > li:first-child.auth-sns-user__item--email {
+        margin-top: 0;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list > li:first-child.auth-sns-user__item--email:before {
+        display: none;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list > li a {
+        display: block;
+        padding: 13px 10px;
+        border-radius: 3px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.21px;
+        text-align: center;
+        background-color: #ebecf0;
+        color: #000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao a {
+        background-color: rgb(250, 225, 0);
+        color: #000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--google,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--github,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--naver,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--twitter,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--facebook,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao,
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--apple {
+        position: relative;
+      }
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--apple a::before {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        content: " ";
+        background-size: 51px;
+        background-image: url("data:image/svg+xml,%3Csvg width='56' height='56' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23000' d='M6 6h44v44H6z'/%3E%3Cpath d='M28.223 20.385c.832 0 1.875-.58 2.496-1.353.562-.7.972-1.68.972-2.658 0-.132-.011-.265-.035-.374-.926.036-2.039.64-2.707 1.45-.527.615-1.008 1.582-1.008 2.572 0 .145.024.29.036.338.058.013.152.025.246.025zM25.293 35c1.137 0 1.64-.785 3.059-.785 1.441 0 1.757.76 3.023.76 1.242 0 2.074-1.183 2.86-2.342.878-1.33 1.242-2.634 1.265-2.694-.082-.024-2.46-1.027-2.46-3.841 0-2.44 1.874-3.54 1.98-3.624-1.243-1.836-3.13-1.884-3.645-1.884-1.395 0-2.531.87-3.246.87-.774 0-1.793-.822-3-.822-2.297 0-4.629 1.957-4.629 5.653 0 2.295.867 4.723 1.934 6.293.914 1.329 1.71 2.416 2.859 2.416z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--apple.white a::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cg transform='translate(-6 -6)'%3E%3Cpath d='M6,6H50V50H6Z' fill='none' fill-rule='evenodd'/%3E%3Cpath d='M28.223,20.385a3.583,3.583,0,0,0,2.5-1.353,4.4,4.4,0,0,0,.972-2.658A1.808,1.808,0,0,0,31.656,16a4.056,4.056,0,0,0-2.707,1.45,4.165,4.165,0,0,0-1.008,2.572,1.662,1.662,0,0,0,.036.338A1.219,1.219,0,0,0,28.223,20.385ZM25.293,35c1.137,0,1.64-.785,3.059-.785,1.441,0,1.757.76,3.023.76,1.242,0,2.074-1.183,2.86-2.342A10.837,10.837,0,0,0,35.5,29.939,4.159,4.159,0,0,1,33.04,26.1a4.322,4.322,0,0,1,1.98-3.624,4.286,4.286,0,0,0-3.645-1.884c-1.4,0-2.531.87-3.246.87-.774,0-1.793-.822-3-.822-2.3,0-4.629,1.957-4.629,5.653a11.928,11.928,0,0,0,1.934,6.293C23.348,33.913,24.144,35,25.293,35Z'/%3E%3C/g%3E%3C/svg%3E%0A");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--apple.white a {
+        background-color: #fff;
+        color: #000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--apple a {
+        background-color: #000;
+        color: #fff;
+      }
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--facebook a {
+        background-color: #1877f2;
+        color: #fff;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--naver a {
+        background-color: #00c73c;
+        color: #fff;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao a {
+        background-color: #fee500;
+        color: #000000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--twitter a {
+        background-color: #1da1f2;
+        color: #fff;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--twitter a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        width: 24px;
+        height: 24px;
+        content: " ";
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='328 355 335 276' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M630 425a195 195 0 01-299 175 142 142 0 0097-30 70 70 0 01-58-47 70 70 0 0031-2 70 70 0 01-57-66 70 70 0 0028 5 70 70 0 01-18-90 195 195 0 00141 72 67 67 0 01116-62 117 117 0 0043-17 65 65 0 01-31 38 117 117 0 0039-11 65 65 0 01-32 35z' fill='%23fff'/%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        width: 24px;
+        height: 24px;
+        content: " ";
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 256 256'%3E%3Cpath fill='%23FFE812' d='M256 236c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0h216c11.046 0 20 8.954 20 20v216z'/%3E%3Cpath d='M128 36C70.562 36 24 72.713 24 118c0 29.279 19.466 54.97 48.748 69.477-1.593 5.494-10.237 35.344-10.581 37.689 0 0-.207 1.762.934 2.434s2.483.15 2.483.15c3.272-.457 37.943-24.811 43.944-29.04 5.995.849 12.168 1.29 18.472 1.29 57.438 0 104-36.712 104-82 0-45.287-46.562-82-104-82z'/%3E%3Cpath fill='%23FFE812' d='M70.5 146.625c-3.309 0-6-2.57-6-5.73V105.25h-9.362c-3.247 0-5.888-2.636-5.888-5.875s2.642-5.875 5.888-5.875h30.724c3.247 0 5.888 2.636 5.888 5.875s-2.642 5.875-5.888 5.875H76.5v35.645c0 3.16-2.691 5.73-6 5.73zm52.612-.078c-2.502 0-4.416-1.016-4.993-2.65l-2.971-7.778-18.296-.001-2.973 7.783c-.575 1.631-2.488 2.646-4.99 2.646a9.155 9.155 0 01-3.814-.828c-1.654-.763-3.244-2.861-1.422-8.52l14.352-37.776c1.011-2.873 4.082-5.833 7.99-5.922 3.919.088 6.99 3.049 8.003 5.928l14.346 37.759c1.826 5.672.236 7.771-1.418 8.532a9.176 9.176 0 01-3.814.827c-.001 0 0 0 0 0zm-11.119-21.056L106 108.466l-5.993 17.025h11.986zM138 145.75c-3.171 0-5.75-2.468-5.75-5.5V99.5c0-3.309 2.748-6 6.125-6s6.125 2.691 6.125 6v35.25h12.75c3.171 0 5.75 2.468 5.75 5.5s-2.579 5.5-5.75 5.5H138zm33.334.797c-3.309 0-6-2.691-6-6V99.5c0-3.309 2.691-6 6-6s6 2.691 6 6v12.896l16.74-16.74c.861-.861 2.044-1.335 3.328-1.335 1.498 0 3.002.646 4.129 1.772 1.051 1.05 1.678 2.401 1.764 3.804.087 1.415-.384 2.712-1.324 3.653l-13.673 13.671 14.769 19.566a5.951 5.951 0 011.152 4.445 5.956 5.956 0 01-2.328 3.957 5.94 5.94 0 01-3.609 1.211 5.953 5.953 0 01-4.793-2.385l-14.071-18.644-2.082 2.082v13.091a6.01 6.01 0 01-6.002 6.003z'/%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--facebook a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        width: 18px;
+        height: 18px;
+        content: " ";
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath id='a' d='M.001 0H18v17.89H.001z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cpath d='M18 9a9 9 0 10-10.406 8.89v-6.288H5.309V9h2.285V7.017c0-2.255 1.343-3.501 3.4-3.501.984 0 2.014.175 2.014.175v2.215h-1.135c-1.118 0-1.467.694-1.467 1.406V9h2.496l-.399 2.602h-2.097v6.289C14.71 17.215 18 13.492 18 9' fill='%231877F2' mask='url(%23b)'/%3E%3Cpath d='M12.503 11.602l.4-2.602h-2.497V7.312c0-.712.349-1.406 1.467-1.406h1.135V3.691s-1.03-.175-2.015-.175c-2.056 0-3.4 1.246-3.4 3.501V9H5.31v2.602h2.285v6.289a9.067 9.067 0 002.812 0V11.6h2.097' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--naver a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        content: " ";
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.86 0v8.32L6.16 0H0v16.491h6.14v-8.32l5.7 8.32H18V0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--github a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        width: 18px;
+        height: 18px;
+        content: " ";
+        background-size: 18px;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0a9 9 0 00-2.845 17.54c.45.083.614-.195.614-.434 0-.213-.007-.78-.012-1.53-2.503.543-3.031-1.207-3.031-1.207-.41-1.04-1-1.317-1-1.317-.817-.558.062-.547.062-.547.903.064 1.378.928 1.378.928.803 1.375 2.107.978 2.62.748.082-.582.314-.978.571-1.203-1.998-.227-4.1-1-4.1-4.448 0-.983.351-1.787.927-2.415-.093-.228-.402-1.144.089-2.382 0 0 .755-.242 2.474.922A8.62 8.62 0 019 4.352a8.63 8.63 0 012.253.303c1.719-1.164 2.473-.922 2.473-.922.491 1.238.182 2.154.09 2.382.577.628.925 1.432.925 2.415 0 3.457-2.105 4.218-4.11 4.44.323.278.611.828.611 1.667 0 1.203-.01 2.174-.01 2.469 0 .24.162.521.618.433A9 9 0 009 0' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--google a::before {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        width: 18px;
+        height: 18px;
+        content: " ";
+        background-size: 18px;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M17.64 9.205c0-.639-.057-1.252-.164-1.841H9v3.481h4.844a4.14 4.14 0 01-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z' fill='%234285F4'/%3E%3Cpath d='M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 009 18z' fill='%2334A853'/%3E%3Cpath d='M3.964 10.71A5.41 5.41 0 013.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 000 9c0 1.452.348 2.827.957 4.042l3.007-2.332z' fill='%23FBBC05'/%3E%3Cpath d='M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 00.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z' fill='%23EA4335'/%3E%3Cpath d='M0 0h18v18H0z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--google a {
+        background-color: #fff;
+        color: #757575;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--github a {
+        background-color: #353a3f;
+        color: #fff;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--email a {
+        background-color: #ebecf0;
+        color: #000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao a:hover {
+        background-color: #fee500;
+        color: #000000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--facebook a:hover {
+        /*background-color: #354f84;*/
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--kakao a:hover {
+        background-color: #fee500;
+        color: #000000;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--naver a:hover {
+        background-color: #0cae3d;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--twitter a:hover {
+        background-color: #0084d3;
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--google a:hover {
+        /*background-color: #3E6ECC;*/
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--github a:hover {
+        /*background-color: #1B1E22;*/
+      }
+
+      .user .auth-sns-user .auth-sns-user-list .auth-sns-user__item--email a:hover {
+        background-color: #c1c7d0;
+      }
+
+      /* ---- //회원가입 개편 스타일, 소셜 로그인, 소셜 회원가입 동일하게 스타일 적용 ---- */
+
+      .user .auth-group .btn-eye {
+        position: absolute;
+        top: 0;
+        right: 4px;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        color: #8e8e93;
+        font-size: 19px;
+        border-color: transparent;
+        background-color: transparent;
+      }
+
+      .user .auth-group .btn-eye .xi-eye-off,
+      .user .auth-group .btn-eye.on .xi-eye {
+        display: none;
+      }
+
+      .user .auth-group .btn-eye.on .xi-eye-off {
+        display: block;
+      }
+
+      .user .auth-group.option {
+        background-color: #f6f7f8;
+        color: #2c2e37;
+      }
+
+      .info {
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e4e4e4;
+      }
+
+      .info p {
+        margin: 0 0 24px;
+        color: #696e7a;
+      }
+
+      .info em,
+      .user .sub-text em {
+        font-weight: 600;
+        color: #2c2e37;
+      }
+
+      .info em.info-title {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      /* -------- 소셜 로그인 로그인 영역 추가 스타일 ------- */
+
+      .user .user-login {
+        margin-top: 24px;
+      }
+
+      .user .user-login .xu-form-group__input-box {
+        width: 100%;
+      }
+
+      .user .user-login .xu-label-checkradio {
+        margin-top: 16px;
+      }
+
+      .user .user-login .xu-form-group {
+        margin-bottom: 0;
+      }
+
+      .user .user-login .xu-form-group + .xu-form-group {
+        margin-top: 4px;
+      }
+
+      .user .user-login .user-login-link {
+        font-weight: 600;
+        color: #345bd9;
+      }
+
+      .user .user-login .user-login__button {
+        clear: both;
+        margin-top: 13px;
+      }
+
+      .user .user-text__extra {
+        margin: 16px 0;
+        font-size: 13px;
+        line-height: 1.23;
+        font-weight: 600;
+        text-align: center;
+        color: #6b778c;
+      }
     </style>
     <script>
       $(".header-sitemap-mobile").on("click", function () {
@@ -734,203 +1510,56 @@
 
     <!-- 컨텐츠영역 -->
     <div data-aos="zoom-out-up" data-aos-easing="ease-in-out-back" data-aos-duration="900" class="jm-min-w-[100vw] jm-min-h-[100vh] jm-bg-[#fff] jm-box-border">
-      <div class="jm-flex jm-flex-col jm-justify-center jm-items-center jm-w-full jm-h-auto jm-pt-[85px] lg:jm-pt-[115px] jm-pb-[40px] jm-min-h-[50vh] jm-bg-[#911789f4]">
-        <p class="jm-animate-pulse jm-text-[#fff] jm-text-[16px] jm-font-[700] lg:jm-text-[21px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[25px] jm-text-center">
-          다양한 장르와 분야의 아티스트들이 공유한<br class="!jm-block lg:!jm-hidden" />
-          샘플 트랙을 경험해보세요.
-        </p>
-        <form class="jm-w-full jm-container" action="/samplerix/search_result/result.html">
-          <div class="jm-w-[100%] jm-mb-[20px] lg:jm-mb-[30px] lg:jm-max-w-[65%] jm-mx-auto jm-bg-[#fff] jm-border-[1px] lg:jm-border-[1px] lg:!jm-border-b-[2px] jm-border-[#D59F13] focus:jm-border-[#D59F13] hover:jm-border-[#D59F13] jm-rounded-[20px] jm-relative jm-overflow-hidden">
-            <input id="search_bar" name="keyword" class="jm-w-full jm-h-full !jm-outline-none hover:!jm-outline-none jm-py-[12px] lg:jm-py-[12px] jm-pl-[15px] lg:jm-pl-[20px] jm-pr-[40px] lg:jm-pr-[60px] jm-box-border jm-text-[12px] md:jm-text-[13px] jm-font-[500] lg:jm-text-[18px] jm-tracking-[-0.6px] jm-text-[#1f1f1f]" type="text" placeholder="장르 & 분야별 다양한 샘플들이 당신을 돕기 위해 모였습니다!" style="appearance: none !important" />
-            <button onclick="search()" class="jm-absolute jm-top-[50%] jm-translate-y-[-50%] jm-right-[20px] jm-w-[18px] lg:jm-w-[36px]">
-              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1238 13.1422L18.1306 17.149C18.4027 17.4177 18.4027 17.8599 18.1306 18.1286C17.8584 18.4007 17.4197 18.4007 17.1476 18.1286L13.1408 14.1252C11.9299 15.1184 10.3823 15.7136 8.69178 15.7136C4.81083 15.7136 1.66797 12.5674 1.66797 8.68983C1.66797 4.81227 4.81083 1.66602 8.69178 1.66602C12.5693 1.66602 15.7156 4.81227 15.7156 8.68983C15.7156 10.3803 15.1169 11.9313 14.1238 13.1422ZM3.06253 8.68983C3.06253 11.7919 5.58634 14.3157 8.69178 14.3157C11.7938 14.3157 14.321 11.7919 14.321 8.68983C14.321 5.58778 11.7938 3.06057 8.69178 3.06057C5.58634 3.06057 3.06253 5.58778 3.06253 8.68983Z" fill="black"></path>
-                <mask id="mask0_380_293428691184354dfdsaf354asd35f4" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="18">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1238 13.1422L18.1306 17.149C18.4027 17.4177 18.4027 17.8599 18.1306 18.1286C17.8584 18.4007 17.4197 18.4007 17.1476 18.1286L13.1408 14.1252C11.9299 15.1184 10.3823 15.7136 8.69178 15.7136C4.81083 15.7136 1.66797 12.5674 1.66797 8.68983C1.66797 4.81227 4.81083 1.66602 8.69178 1.66602C12.5693 1.66602 15.7156 4.81227 15.7156 8.68983C15.7156 10.3803 15.1169 11.9313 14.1238 13.1422ZM3.06253 8.68983C3.06253 11.7919 5.58634 14.3157 8.69178 14.3157C11.7938 14.3157 14.321 11.7919 14.321 8.68983C14.321 5.58778 11.7938 3.06057 8.69178 3.06057C5.58634 3.06057 3.06253 5.58778 3.06253 8.68983Z" fill="white"></path>
-                </mask>
-                <g mask="url(#mask0_380_293428691184354dfdsaf354asd35f4)">
-                  <rect width="20" height="20" fill="#777777"></rect>
-                </g>
-              </svg>
-            </button>
+      <div class="jm-min-h-[70vh] jm-w-full jm-max-w-[1140px] jm-mx-auto jm-container jm-pt-[85px] lg:jm-pt-[115px] jm-pb-[40px]">
+        <div class="user __xe_userLogin">
+          <div class="auth-sns-user">
+            <h2 class="user__title">로그인</h2>
+
+            <form action="/samplerix/main/index.html" method="post">
+              <input type="hidden" name="_token" value="8jGMgVfq9dyISSfxinsG2f2oDk37vq9UPARz1n0q" />
+              <fieldset>
+                <legend>계정에 로그인</legend>
+                <div class="user-login">
+                  <div class="xu-form-group xu-form-group--large">
+                    <input type="email" name="email" class="xu-form-group__control jm-w-full jm-border jm-border-[1px] jm-border-[#dfdfdf] focus:!jm-border-[#911789f4] jm-px-[15px] jm-py-[8px] lg:jm-py-[10px] jm-rounded-[2px] jm-text-[14px] jm-text-[#484848] lg:jm-text-[15px] jm-leading-[160%] jm-font-[500] jm-outline-none" placeholder="아이디 또는 이메일" value="" />
+                  </div>
+                  <div class="xu-form-group xu-form-group--large jm-mb-[3px]">
+                    <input type="password" name="password" class="xu-form-group__control jm-w-full jm-border jm-border-[1px] jm-border-[#dfdfdf] focus:!jm-border-[#911789f4] jm-px-[15px] jm-py-[8px] lg:jm-py-[10px] jm-rounded-[2px] jm-text-[14px] jm-text-[#484848 lg:jm-text-[15px] jm-leading-[160%] jm-font-[500]] jm-outline-none" id="password" placeholder="비밀번호" />
+                  </div>
+                  <label class="xu-label-checkradio xu-label-checkradio--small jm-mt-[3px]">
+                    <input type="checkbox" class="__xe_keep_login" name="remember" />
+                    <span class="xu-label-checkradio__helper"></span>
+                    <span class="xu-label-checkradio__text">로그인 유지하기</span>
+                  </label>
+                  <!--[D] 체크 시 하단메시지 노출-->
+                  <p class="auth-noti" id="__xe_infoRemember" style="display: none">브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다. 로그인 유지 기능을 사용할 경우 다음 접속부터는 로그인할 필요가 없습니다. 단, 게임방, 학교 등 공공장소에서 이용 시 개인정보가 유출될 수 있으니 꼭 로그아웃을 해주세요.</p>
+
+                  <button type="submit" class="jm-w-full jm-bg-[#911789f4] jm-mt-[10px] jm-px-[15px] jm-py-[10px]">
+                    <span class="xu-button__text jm-text-[#fff] jm-text-[16px] jm-font-[600] jm-tracking-[-0.4px] jm-leading-[-160%]">로그인</span>
+                  </button>
+
+                  <div class="auth-user__text-box">
+                    <p class="auth-user__text">아직 회원이 아닙니까? <a onclick="alert('베타서비스 중에는 신규회원 가입이 어렵습니다.🥺');">회원 가입하기</a></p>
+                    <p class="auth-user__text">비밀번호를 잊었습니까? <a href="#auth/reset">비밀번호를 잊었습니까?</a></p>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+
+            <p class="user-text__extra">or</p>
+
+            <ul class="auth-sns-user-list">
+              <li class="auth-sns-user__item--kakao">
+                <a href="#social_login/auth/kakao"> 카카오 계정으로 로그인 </a>
+              </li>
+              <li class="auth-sns-user__item--naver">
+                <a href="#social_login/auth/naver"> 네이버 계정으로 로그인 </a>
+              </li>
+              <li class="auth-sns-user__item--google">
+                <a href="#social_login/auth/google"> 구글 계정으로 로그인 </a>
+              </li>
+            </ul>
           </div>
-        </form>
-        <div class="jm-container jm-flex jm-flex-col jm-items-center jm-justify-center">
-          <div class="sounds-genre_section jm-mx-auto">
-            <h3 class="search-tabs-header jm-mb-[6px] jm-font-[700] jm-text-[14px] lg:jm-text-[16px] jm-leading-[150%] jm-tracking-[-0.8px] jm-text-[#fff]">장르별 분류</h3>
-            <div class="jm-flex jm-flex-wrap jm-flex-row jm-gap-[8px] jm-mb-[20px]">
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="annex" class="jm-peer jm-a11y" required="" checked />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">전체</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Hip Hop</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Drum and Bass</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Trap</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">R&B</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Pop</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Tech House</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">EDM</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Disco</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Soul</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Techno</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Cinematic</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="jenres" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Reggaeton</p>
-                </div>
-              </label>
-            </div>
-            <h3 class="search-tabs-header jm-mb-[6px] jm-font-[700] jm-text-[14px] lg:jm-text-[16px] jm-leading-[150%] jm-tracking-[-0.8px] jm-text-[#fff]">악기별 분류</h3>
-            <div class="jm-flex jm-flex-wrap jm-flex-row jm-gap-[8px]">
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="annex" class="jm-peer jm-a11y" required="" checked />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">전체</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Drums</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Vocals</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Synth</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Keys</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Guitar</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Percussion</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Keyboard</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Strings</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Kicks</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Hat</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">Snares</p>
-                </div>
-              </label>
-              <label class="jm-flex jm-cursor-pointer" tabindex="0">
-                <input type="radio" tabindex="-1" name="instrument" value="underground" class="jm-peer jm-a11y" required="" />
-                <div class="jm-flex jm-items-center jm-justify-center jm-min-w-[50px] jm-bg-[#FFFFFF] hover:jm-bg-[#F5F5F5] peer-checked:jm-bg-[#D59F13] peer-checked:hover:jm-bg-[#D59F13]/90 jm-border-[2px] jm-border-[#D59F13] peer-checked:jm-border-[#D59F13] jm-text-[#777] peer-checked:jm-text-[#FFFFFF] peer-checked:!jm-font-[600] jm-rounded-[15px]">
-                  <p class="jm-py-[3px] lg:jm-py-[4px] jm-px-[7px] jm-text-[13px] jm-font-[500] lg:jm-text-[14px] jm-leading-[150%] jm-tracking-[-0.6px]">808</p>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="jm-flex jm-flex-col jm-items-center jm-justify-center w-full jm-py-[60px] jm-bg-[#ececec]">
-        <p class="jm-text-[#D59F13] jm-text-[19px] jm-font-[700] lg:jm-text-[29px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[20px] jm-text-center">"모방은 창조의 어머니"</p>
-        <p class="jm-text-[#911789f4] jm-text-[16px] jm-font-[700] lg:jm-text-[20px] jm-leading-[150%] jm-tracking-[-0.6px] jm-mb-[25px] jm-text-center">
-          새로운 아이디어를 구매하고,<br class="!jm-block lg:!jm-hidden" />
-          Buyer에서 시작한 당신이 Seller가 될 수 있습니다.
-        </p>
-        <div class="jm-grid jm-grid-cols-2 jm-w-full jm-container">
-          <div class="jm-bg-cover jm-w-full jm-aspect-square" style="background-image: url('/assets/images/main-img-1.png')"></div>
-          <div class="jm-bg-cover jm-w-full jm-aspect-square" style="background-image: url('/assets/images/main-img-2.png')"></div>
         </div>
       </div>
     </div>
@@ -940,13 +1569,13 @@
         <div class="jm-relative jm-h-full">
           <div class="jm-flex jm-flex-col lg:jm-flex-row jm-justify-between jm-items-center jm-gap-y-[15px] jm-mb-[15px] lg:jm-mb-[20px] lg:jm-pt-[9px]">
             <!-- <div class="jm-flex jm-item-center jm-gap-x-[5px] lg:jm-gap-x-[8px] jm-max-w-[350px]">
-                  <a href="https://play.google.com/store/apps/details?id=kr.co.samplix&amp;hl=ko" target=" " class="jm-w-full">
-                    <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/google-big.png" alt="구글 플레이스토어 다운로드 링크" />
-                  </a>
-                  <a href="https://apps.apple.com/kr/app/%ED%81%AC%EC%A1%B4-%EC%9E%AC%ED%85%8C%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83/id1660501630" target=" " class="jm-w-full">
-                    <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/apple-big.png" alt="애플 앱스토어 다운로드 링크" />
-                  </a>
-                </div> -->
+                <a href="https://play.google.com/store/apps/details?id=kr.co.samplix&amp;hl=ko" target=" " class="jm-w-full">
+                  <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/google-big.png" alt="구글 플레이스토어 다운로드 링크" />
+                </a>
+                <a href="https://apps.apple.com/kr/app/%ED%81%AC%EC%A1%B4-%EC%9E%AC%ED%85%8C%ED%81%AC%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83/id1660501630" target=" " class="jm-w-full">
+                  <img class="jm-w-full" src="/plugins/custom_plugin/src/Skins/samplixLandingPageHtmlSkin/assets/img/apple-big.png" alt="애플 앱스토어 다운로드 링크" />
+                </a>
+              </div> -->
             <button type="button" onclick="location.href='/'" class="jm-flex jm-flex-row jm-items-center jm-justify-center jm-gap-x-[8px] jm-rounded-[100px] jm-bg-[#911789f4] jm-py-[9px] lg:jm-py-[11px] jm-px-[24px] jm-whitespace-nowrap" style="border: 1px solid rgba(255, 255, 255, 0.6)">
               <span class="jm-whitespace-nowrap jm-text-[#fff] jm-text-[16px] lg:jm-text-[19px] jm-font-[700] jm-tracking-[-0.6px] jm-leading-[150%]">About 샘플릭스</span>
               <svg class="jm-mt-[2px]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -988,13 +1617,5 @@
     AOS.init({
       once: true, // 한 번만 애니메이션 실행
     });
-
-    const urlParams = new URL(location.href).searchParams;
-
-    const keyword = urlParams.get("keyword");
-
-    window.onload = function () {
-      document.getElementById("search_bar").value = keyword;
-    };
   </script>
 </html>
